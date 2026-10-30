@@ -8,6 +8,7 @@ Personal website for Annabelle Yao. Plain static HTML/CSS/JS, no build step.
 - `styles.css` — design tokens (light + dark), layout, responsive rules
 - `script.js` — theme toggle, active-nav highlighting, scroll reveal
 - `assets/Annabelle_Yao_CV.pdf` — the CV linked from the hero
+- `assets/annabelle.jpg` — hero portrait
 
 ## Preview locally
 
@@ -27,5 +28,4 @@ python3 -m http.server 8000
 ## Editing content
 
 Everything is in `index.html`. Publications, projects and awards are plain lists, so add or
-remove `<li>` / `<a class="card">` blocks as needed. Replace the hero image URL with a local
-photo in `assets/` if you prefer not to use the GitHub avatar.
+remove `<li>` / `<a class="card">` blocks as needed. The hero portrait is `assets/annabelle.jpg`.
