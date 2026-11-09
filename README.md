@@ -6,8 +6,8 @@ Personal website for Annabelle Yao. Plain static HTML/CSS/JS, no build step.
 
 - `index.html` — the single page (hero, about, experience, research, projects, organizations, awards, contact)
 - `styles.css` — design tokens (light + dark), layout, responsive rules
-- `script.js` — Lenis smooth scroll + GSAP ScrollTrigger choreography (split-text headings, velocity skew, tickers, hairline walls, hero parallax), theme toggle, nav highlight, vanilla-tilt
-- `assets/annabelle.jpg` — portrait; `assets/hero-dolomites.jpg` — hero background; `assets/*_Poster.pdf` — research posters
+- `script.js` — theme toggle, nav highlight, one IntersectionObserver fade-up reveal; no animation libraries
+- `assets/annabelle.jpg` — portrait; `assets/hero-alps.jpg` — hero background; `assets/*_Poster.pdf` — research posters
 
 ## Preview locally
 
