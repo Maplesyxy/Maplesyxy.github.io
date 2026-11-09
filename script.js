@@ -29,7 +29,7 @@
   }
 
   // Gentle reveal for cards and list items.
-  const items = document.querySelectorAll('.pub, .card, .timeline li, .awards li, .facts div');
+  const items = document.querySelectorAll('.pub, .card, .venture, .timeline li, .awards li, .facts div');
   if ('IntersectionObserver' in window) {
     items.forEach(el => el.classList.add('reveal'));
     const rev = new IntersectionObserver(entries => {

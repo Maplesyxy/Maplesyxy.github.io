@@ -167,7 +167,7 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
 .pub-body h3 a:hover { background-size: 100% 1.5px; }
 .pub-meta { font-size: .88rem; color: var(--ink-3); margin: 6px 0 10px; }
 .pub-body > p:not(.pub-meta):not(.pub-links) { color: var(--ink-2); font-size: .97rem; }
-.pub-links { display: flex; gap: 8px; margin-top: 12px; }
+.pub-links { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
 .pub-links a {
   font-size: .8rem; font-weight: 600; padding: 4px 11px; border-radius: 999px;
   background: var(--accent-soft); color: var(--ink);
@@ -239,3 +239,24 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
   .cards { grid-template-columns: 1fr; }
   .site-footer { padding: 24px 16px 36px; }
 }
+
+/* Before Yale */
+.section-note { color: var(--ink-3); font-size: .92rem; margin: 0; text-align: right; max-width: 46ch; }
+.ventures { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px; }
+.venture {
+  background: var(--bg-elev); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px 24px;
+  transition: box-shadow .2s ease, border-color .2s ease;
+}
+.venture:hover { box-shadow: var(--shadow); border-color: color-mix(in srgb, var(--ink-3) 50%, var(--line)); }
+.venture h3 { margin-bottom: 8px; }
+.venture-body > p:not(.links) { color: var(--ink-2); font-size: .97rem; }
+.links { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+.links a {
+  font-size: .8rem; font-weight: 600; padding: 4px 11px; border-radius: 999px;
+  background: var(--accent-soft); color: var(--ink);
+}
+.links a:hover { background: var(--accent); color: var(--accent-ink); }
+.prose a { text-decoration: underline; text-decoration-color: var(--highlight); text-underline-offset: 3px; }
+div.card { cursor: default; }
+@media (max-width: 900px) { .ventures { grid-template-columns: 1fr; } }
+@media (max-width: 720px) { .section-head { flex-direction: column; align-items: flex-start; } .section-note { text-align: left; } }

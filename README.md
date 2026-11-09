@@ -4,7 +4,7 @@ Personal website for Annabelle Yao. Plain static HTML/CSS/JS, no build step.
 
 ## Files
 
-- `index.html` — the single page (hero, about, experience, research, projects, awards, contact)
+- `index.html` — the single page (hero, about, experience, research, projects, before-Yale ventures, awards, contact)
 - `styles.css` — design tokens (light + dark), layout, responsive rules
 - `script.js` — theme toggle, active-nav highlighting, scroll reveal
 - `assets/annabelle.jpg` — hero portrait
