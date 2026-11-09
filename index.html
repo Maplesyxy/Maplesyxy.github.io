@@ -30,8 +30,7 @@
     </defs>
   </svg>
 
-  <div class="wind" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
-  <div class="leaf-wipe" aria-hidden="true"><svg><use href="#maple"/></svg></div>
+  <div class="walls" aria-hidden="true"><i class="wall wall-l"></i><i class="wall wall-r"></i></div>
 
   <a class="skip" href="#about">Skip to content</a>
 
@@ -62,7 +61,7 @@
     <div class="hero-panel glass">
       <img class="hero-avatar" src="assets/annabelle.jpg" alt="Portrait of Annabelle Yao" width="112" height="112" loading="eager">
       <p class="eyebrow">Yale ’30 · Math &amp; Computer Science · Economics</p>
-      <h1>Annabelle Yao</h1>
+      <h1 data-split>Annabelle Yao</h1>
       <p class="lede">
         I build machine-learning systems and study the math underneath them: geometric deep learning for
         RNA design, event-camera vision transformers, interpretable medical imaging, learning agents for
@@ -84,11 +83,13 @@
     <a class="scroll-cue" href="#about" aria-label="Scroll to content">↓</a>
   </section>
 
+  <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>Learning in games</span><i>✦</i><span>Game theory</span><i>✦</i><span>Multi-agent RL</span><i>✦</i><span>Geometric deep learning</span><i>✦</i><span>RNA inverse folding</span><i>✦</i><span>Vision transformers</span><i>✦</i><span>Quant research</span><i>✦</i><span>Yale ’30</span><i>✦</i></div></div>
+
   <main>
     <!-- ABOUT -->
     <section id="about" class="section">
       <div class="section-head">
-        <h2><span class="num">01</span>About</h2>
+        <h2><span class="num">01</span><span data-split>About</span></h2>
       </div>
       <div class="about-grid">
         <div class="prose">
@@ -127,7 +128,7 @@
     <!-- EXPERIENCE -->
     <section id="experience" class="section">
       <div class="section-head">
-        <h2><span class="num">02</span>Experience</h2>
+        <h2><span class="num">02</span><span data-split>Experience</span></h2>
       </div>
       <ol class="timeline">
         <li>
@@ -206,7 +207,7 @@
     <!-- RESEARCH -->
     <section id="research" class="section">
       <div class="section-head">
-        <h2><span class="num">03</span>Research &amp; Publications</h2>
+        <h2><span class="num">03</span><span data-split>Research &amp; Publications</span></h2>
         <a class="section-link" href="https://scholar.google.com/citations?user=dfx8YmQAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar ↗</a>
       </div>
       <ol class="pubs">
@@ -293,10 +294,13 @@
       </ol>
     </section>
 
+  </main>
+  <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>GVP-GCN + Transformer</span><i>✦</i><span>0.481 recovery on RNA-Puzzles</span><i>✦</i><span>98.4% on DVS128 Gesture</span><i>✦</i><span>0.99 ROC-AUC on ADNI</span><i>✦</i><span>NELFE exon-10 skipping</span><i>✦</i><span>arXiv 2601.00895</span><i>✦</i><span>arXiv 2601.00896</span><i>✦</i></div></div>
+  <main>
     <!-- PROJECTS -->
     <section id="projects" class="section">
       <div class="section-head">
-        <h2><span class="num">04</span>Projects</h2>
+        <h2><span class="num">04</span><span data-split>Projects</span></h2>
         <a class="section-link" href="https://github.com/Maplesyxy" target="_blank" rel="noopener">All repositories ↗</a>
       </div>
       <div class="cards cards-2">
@@ -346,7 +350,7 @@
     <!-- ORGANIZATIONS -->
     <section id="organizations" class="section">
       <div class="section-head">
-        <h2><span class="num">05</span>Organizations &amp; Leadership</h2>
+        <h2><span class="num">05</span><span data-split>Organizations &amp; Leadership</span></h2>
         <p class="section-note">Founded or led at The Lawrenceville School and in Shanghai, 2022–2026.</p>
       </div>
       <div class="cards">
@@ -404,10 +408,13 @@
       </div>
     </section>
 
+  </main>
+  <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>TechTrek · 52 writers</span><i>✦</i><span>FutureFrontier Foundation</span><i>✦</i><span>Horizons Day · 26 workshops</span><i>✦</i><span>Varsity fencing captain</span><i>✦</i><span>ISA president</span><i>✦</i><span>FTC · ARC national finalist</span><i>✦</i><span>Also known as Maple</span><i>✦</i></div></div>
+  <main>
     <!-- AWARDS -->
     <section id="awards" class="section">
       <div class="section-head">
-        <h2><span class="num">06</span>Awards &amp; Honors</h2>
+        <h2><span class="num">06</span><span data-split>Awards &amp; Honors</span></h2>
         <ul class="legend" aria-label="Award level key">
           <li data-level="international">International</li>
           <li data-level="national">National</li>
@@ -422,13 +429,14 @@
         <li class="glass" data-level="international"><span class="award-year">2026</span><div><strong>Tencent Technology Youth Camp, International Top 50</strong><span>AI hackathon with 50,000+ entrants.</span></div><span class="level">International</span></li>
         <li class="glass" data-level="national"><span class="award-year">2026</span><div><strong>National Merit Scholarship Finalist</strong><span>PSAT 1520/1520.</span></div><span class="level">National</span></li>
         <li class="glass" data-level="national"><span class="award-year">2026</span><div><strong>NCWIT Aspirations in Computing, National Honorable Mention</strong><span>Top 300 of 2,700 applicants; second consecutive year.</span></div><span class="level">National</span></li>
+        <li class="glass" data-level="national"><span class="award-year">2026</span><div><strong>Jackson Laboratory Summer Student Program, Accepted</strong><span>Selected as 1 of 25 undergraduates and high school seniors nationwide to intern at The Jackson Laboratory in Bar Harbor; declined due to scheduling conflicts.</span></div><span class="level">National</span></li>
         <li class="glass" data-level="school"><span class="award-year">2026</span><div><strong>Cum Laude, The Lawrenceville School</strong><span>Highest honor given to graduating class members.</span></div><span class="level">School</span></li>
         <li class="glass" data-level="national"><span class="award-year">2026</span><div><strong>Susquehanna (SIG) Virtual High School Discovery Event</strong><span>Selected participant.</span></div><span class="level">National</span></li>
         <li class="glass" data-level="national"><span class="award-year">2025</span><div><strong>NCWIT Aspirations in Computing, National Honorable Mention</strong><span>Top 10% nationally for technical skill and leadership.</span></div><span class="level">National</span></li>
         <li class="glass" data-level="national"><span class="award-year">2025</span><div><strong>USA Computing Olympiad, Platinum</strong><span>Highest USACO division, certified score.</span></div><span class="level">National</span></li>
         <li class="glass" data-level="regional"><span class="award-year">2025</span><div><strong>Yale Science Fair Award</strong><span>Yale Science &amp; Engineering Association, one per ISEF-affiliated fair; RNA inverse-folding project.</span></div><span class="level">Regional</span></li>
         <li class="glass" data-level="regional"><span class="award-year">2025</span><div><strong>Mercer Science &amp; Engineering Fair, 1st Place</strong><span>Senior division, RNA inverse-folding project; ISEF finalist alternate.</span></div><span class="level">Regional</span></li>
-        <li class="glass" data-level="national"><span class="award-year">2025</span><div><strong>Anson L. Clark Scholars, Accepted</strong><span>Computer-science track, 12 students nationally; declined for the Jefferson internship.</span></div><span class="level">National</span></li>
+        <li class="glass" data-level="national"><span class="award-year">2025</span><div><strong>Anson L. Clark Scholars, Accepted</strong><span>Selected as 1 of 12 students (~1.6% acceptance rate), the only girl in the computer-science track; declined due to scheduling conflicts with the Jefferson internship.</span></div><span class="level">National</span></li>
         <li class="glass" data-level="regional"><span class="award-year">2024</span><div><strong>Mercer Science &amp; Engineering Fair, 1st Place</strong><span>Senior division, Alzheimer’s early-diagnosis project; ISEF finalist alternate.</span></div><span class="level">Regional</span></li>
         <li class="glass" data-level="regional"><span class="award-year">2024</span><div><strong>Regeneron Biomedical Science Award</strong><span>ISEF special award for significant scientific and technical innovation within the area of computational biology.</span></div><span class="level">Regional</span></li>
         <li class="glass" data-level="regional"><span class="award-year">2024</span><div><strong>U.S. Air Force Research Laboratory Award</strong><span>ISEF special award for scientific and technical innovation.</span></div><span class="level">Regional</span></li>
@@ -440,13 +448,12 @@
     </section>
   </main>
 
-  <!-- CONTACT: the leaf lands here -->
-  <section id="contact" class="ground">
-    <div class="ground-inner">
-      <div class="leaf-ground" aria-hidden="true"><svg><use href="#maple"/></svg></div>
-      <div class="ground-card glass">
+  <!-- CONTACT -->
+  <section id="contact" class="closing">
+    <div class="closing-inner">
+      <div class="closing-card glass">
         <p class="eyebrow">Say hello</p>
-        <h2>Hi, I’m Annabelle. You might also know me as <em>Maple</em>.</h2>
+        <h2 data-split>Hi, I’m Annabelle. You might also know me as Maple.</h2>
         <p>
           Maple is the name I go by in competitive programming and at hackathons. Reach out for research
           collaborations, projects, or anything at the intersection of math, machine learning and the sciences.
@@ -457,7 +464,6 @@
         </div>
       </div>
     </div>
-    <div class="ground-line" aria-hidden="true"></div>
   </section>
 
   <footer class="site-footer">
@@ -469,6 +475,9 @@
     </p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" defer></script>
   <script src="script.js" defer></script>
 </body>
