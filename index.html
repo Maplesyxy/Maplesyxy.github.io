@@ -8,7 +8,9 @@
   <meta property="og:title" content="Annabelle Yao">
   <meta property="og:description" content="Math & CS + Economics @ Yale ’30. ML researcher: RNA inverse folding, vision transformers, learning in games, quant research.">
   <meta property="og:image" content="https://maplesyxy.github.io/assets/annabelle.jpg">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%23d9531e' d='M50 2 57 20 70 10 66 30 85 24 75 42 96 48 78 58 88 76 68 70 70 92 55 78 52 98 48 98 45 78 30 92 32 70 12 76 22 58 4 48 25 42 15 24 34 30 30 10 43 20Z'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -30,11 +32,13 @@
     </defs>
   </svg>
 
+  <div class="backdrop" aria-hidden="true"><img src="assets/bg-seceda.jpg" alt="" loading="lazy"></div>
+
   <a class="skip" href="#about">Skip to content</a>
 
   <header class="site-header">
     <nav class="nav glass" aria-label="Primary">
-      <a class="brand" href="#top"><svg class="brand-leaf" aria-hidden="true"><use href="#maple"/></svg>Annabelle Yao</a>
+      <a class="brand" href="#top"><img class="brand-leaf" src="assets/favicon.svg" alt="" width="26" height="26">Annabelle Yao</a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
@@ -218,16 +222,15 @@
         <h2><span class="num" aria-hidden="true">03</span>Research &amp; Publications</h2>
         <a class="section-link" href="https://scholar.google.com/citations?user=dfx8YmQAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar ↗</a>
       </div>
-      <ol class="pubs">
+      <ol class="pubs pubs-grid">
         <li class="pub glass">
           <div class="pub-year">2025</div>
           <div class="pub-body">
             <h3><a href="https://arxiv.org/abs/2601.00895" target="_blank" rel="noopener">Deep Learning Framework for RNA Inverse Folding with Geometric Structure Potentials</a></h3>
-            <p class="pub-meta">A. Yao · arXiv:2601.00895 · Highlights in Science, Engineering and Technology (BLSME 2026)</p>
+            <p class="pub-meta">A. Yao · arXiv:2601.00895 · HSET (BLSME 2026)</p>
             <p>
-              A GVP-GCN + Transformer that designs RNA sequences folding into a target 3D backbone. Curated
-              6,300+ PDB structures (deduplicated to ~2,500 with CD-HIT) and reached 0.481 recovery / 0.332
-              TM-score on RNA-Puzzles, ahead of RDesign, RiboLogic and LEARNA. ISEF 2025 research.
+              GVP-GCN + Transformer that designs RNA sequences for a target 3D backbone. 0.481 recovery on
+              RNA-Puzzles, ahead of RDesign, RiboLogic and LEARNA.
             </p>
             <p class="links">
               <a href="https://arxiv.org/abs/2601.00895" target="_blank" rel="noopener">arXiv</a>
@@ -240,14 +243,10 @@
           <div class="pub-year">2025</div>
           <div class="pub-body">
             <h3><a href="assets/Jefferson_Poster.pdf" target="_blank" rel="noopener">Targeting NELFE Splicing with Antisense Oligonucleotides in Hepatocellular Carcinoma</a></h3>
-            <p class="pub-meta">A. Yao, L. Reynolds, H. Dang · <a class="role-link" href="https://research.jefferson.edu/labs/researcher/dang-laboratory.html" target="_blank" rel="noopener">Dang Lab</a>, Thomas Jefferson University · report and poster</p>
+            <p class="pub-meta">A. Yao, L. Reynolds, H. Dang · <a class="role-link" href="https://research.jefferson.edu/labs/researcher/dang-laboratory.html" target="_blank" rel="noopener">Dang Lab</a>, Thomas Jefferson University</p>
             <p>
-              A step toward a new treatment for liver cancer. Hepatocellular carcinoma is the most common liver
-              cancer and one of the deadliest, and the RNA-binding protein NELFE drives its growth. We designed
-              antisense oligonucleotides that force NELFE exon-10 skipping, mimicking a naturally protective
-              variant, and showed they lower NELFE protein in Huh1 and Huh7 cells: the crucial first step before
-              delivering the ASOs to tumors in vivo. Data from 44 PCRs, 10 Western blots and five weeks of IVIS
-              imaging; first-author 13-page report.
+              Toward a new liver-cancer treatment: antisense oligonucleotides that force NELFE exon-10 skipping
+              and lower the oncogenic protein in Huh1 and Huh7 cells, the crucial step before in-vivo delivery.
             </p>
             <p class="links">
               <a href="assets/Jefferson_Poster.pdf" target="_blank" rel="noopener">Poster</a>
@@ -261,8 +260,7 @@
             <h3><a href="https://arxiv.org/abs/2601.00896" target="_blank" rel="noopener">Investigation into US Citizen and Non-Citizen Worker Health Insurance and Employment</a></h3>
             <p class="pub-meta">A. Yao · arXiv:2601.00896</p>
             <p>
-              An empirical study of health-insurance coverage and employment outcomes across citizen and
-              non-citizen workers in the United States, using χ² and two-proportion tests, K-Prototypes
+              Coverage and employment outcomes for citizen vs. non-citizen U.S. workers: χ² tests, K-Prototypes
               clustering, t-SNE and a CatBoost classifier.
             </p>
             <p class="links"><a href="https://arxiv.org/abs/2601.00896" target="_blank" rel="noopener">arXiv</a></p>
@@ -271,11 +269,11 @@
         <li class="pub glass">
           <div class="pub-year">2024</div>
           <div class="pub-body">
-            <h3><a href="https://www.ewadirect.com/proceedings/ace/article/view/17654" target="_blank" rel="noopener">Enhancing Real-Time Vision Systems: Integrating Dynamic Vision Sensors with Vision Transformers to Increase Computational Efficiency</a></h3>
-            <p class="pub-meta">A. Yao, O. Su · 2nd International Conference on Machine Learning and Automation · Applied and Computational Engineering</p>
+            <h3><a href="https://www.ewadirect.com/proceedings/ace/article/view/17654" target="_blank" rel="noopener">Integrating Dynamic Vision Sensors with Vision Transformers for Real-Time Efficiency</a></h3>
+            <p class="pub-meta">A. Yao, O. Su · Applied and Computational Engineering (CONF-MLA 2024)</p>
             <p>
-              A custom ViT for sparse DVS128 Gesture event data that exploits temporal sparsity, reaching 98.4%
-              accuracy in five epochs against spiking-network baselines averaging 93.1%.
+              A ViT for sparse event-camera data that exploits temporal sparsity: 98.4% on DVS128 Gesture in
+              five epochs vs. 93.1% for spiking-network baselines.
             </p>
             <p class="links">
               <a href="https://www.ewadirect.com/proceedings/ace/article/view/17654" target="_blank" rel="noopener">Paper</a>
@@ -286,12 +284,11 @@
         <li class="pub glass">
           <div class="pub-year">2024</div>
           <div class="pub-body">
-            <h3><a href="https://tns.ewapub.com/article/view/17082" target="_blank" rel="noopener">A Novel Interpretative Deep Neural Network with Grad-CAM’s Heatmap for the Early Diagnosis of Alzheimer’s Disease</a></h3>
-            <p class="pub-meta">A. Yao · 4th International Conference on Biological Engineering and Medical Science · Theoretical and Natural Science</p>
+            <h3><a href="https://tns.ewapub.com/article/view/17082" target="_blank" rel="noopener">Interpretable Grad-CAM Deep Network for Early Alzheimer’s Diagnosis</a></h3>
+            <p class="pub-meta">A. Yao · Theoretical and Natural Science (ICBioMed 2024)</p>
             <p>
-              An ImageNet-21k pre-trained ViT with Grad-CAM saliency maps on ~6,400 ADNI brain MRIs, reaching
-              0.99 ROC-AUC and macro-F1 (vs. 0.96 XGBoost, 0.88 VGG-16), plus a web app for MRI upload.
-              ISEF 2024 research; Regeneron Biomedical Science Award.
+              Pre-trained ViT with Grad-CAM saliency on ~6,400 ADNI MRIs: 0.99 ROC-AUC vs. 0.96 XGBoost and
+              0.88 VGG-16. Regeneron Biomedical Science Award.
             </p>
             <p class="links">
               <a href="https://tns.ewapub.com/article/view/17082" target="_blank" rel="noopener">Paper</a>
@@ -469,7 +466,7 @@
   </section>
 
   <footer class="site-footer">
-    <p>© <span id="year"></span> Annabelle Yao · Hero photo: Val di Funes, Dolomites</p>
+    <p>© <span id="year"></span> Annabelle Yao · Photos: Val di Funes and Seceda, Dolomites</p>
     <p class="footer-links">
       <a href="https://github.com/Maplesyxy" target="_blank" rel="noopener">GitHub</a>
       <a href="https://www.linkedin.com/in/annabelle-yao-055602302/" target="_blank" rel="noopener">LinkedIn</a>

@@ -37,8 +37,13 @@
   groups.forEach(sel => {
     document.querySelectorAll(sel).forEach((el, i) => { el.classList.add('reveal'); el.style.setProperty('--d', `${Math.min(i % 6, 5) * 0.06}s`); });
   });
+  // Timeline entries re-arm when they leave the viewport, so each one slides in again as you scroll back.
   const ro = new IntersectionObserver(entries => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); ro.unobserve(e.target); } });
-  }, { rootMargin: '0px 0px -8% 0px' });
+    entries.forEach(e => {
+      const sticky = !e.target.matches('.timeline li');
+      if (e.isIntersecting) { e.target.classList.add('in'); if (sticky) ro.unobserve(e.target); }
+      else if (!sticky && e.boundingClientRect.top > 0) e.target.classList.remove('in');
+    });
+  }, { rootMargin: '0px 0px -12% 0px' });
   document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
 })();
