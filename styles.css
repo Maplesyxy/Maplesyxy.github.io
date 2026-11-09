@@ -88,7 +88,7 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 20px; position: relati
 .nav { max-width: var(--maxw); margin: 0 auto; padding: 8px 10px 8px 18px; display: flex; align-items: center; gap: 22px; border-radius: 999px; background: color-mix(in srgb, var(--card) 92%, transparent); box-shadow: 0 1px 2px rgba(27,33,48,.06), 0 10px 30px -18px rgba(27,33,48,.4); }
 .nav::before { display: none; }
 .brand { display: inline-flex; align-items: center; gap: 8px; font-family: var(--serif); font-size: 1.15rem; font-weight: 600; }
-.brand-leaf { width: 26px; height: 26px; }
+.brand-leaf { width: 28px; height: 28px; }
 .nav-links { list-style: none; margin: 0 0 0 auto; padding: 0; display: flex; gap: 20px; }
 .nav-links a { font-size: .9rem; font-weight: 500; color: var(--ink-2); position: relative; padding: 4px 0; }
 .nav-links a::after { content: ""; position: absolute; left: 0; right: 100%; bottom: 0; height: 1.5px; background: var(--highlight); transition: right .25s ease; }
@@ -113,7 +113,7 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 20px; position: relati
 .btn-card:hover { background: var(--accent); color: var(--accent-ink); }
 
 /* ---------- Hero: full-bleed photo, editorial card bottom-left ---------- */
-.hero { position: relative; z-index: 1; min-height: 100svh; display: flex; align-items: flex-end; padding: 120px 20px 56px; isolation: isolate; overflow: hidden; }
+.hero { position: relative; z-index: 1; min-height: 100svh; display: flex; align-items: center; padding: 90px 20px; isolation: isolate; overflow: hidden; }
 .hero-bg { position: absolute; inset: 0; z-index: -1; }
 .hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; }
 .hero-bg::after {
@@ -188,6 +188,10 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 20px; position: relati
 .timeline .what p.role { color: var(--highlight); }
 .is-link { cursor: pointer; }
 .stretched::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
+/* the stretched button must never gain a transform: it would become the containing block for its own overlay */
+.is-link .stretched, .is-link .stretched:hover { transform: none; box-shadow: none; }
+.is-link:hover .btn-card { background: var(--accent); color: var(--accent-ink); }
+.is-link:hover .btn-card span { transform: translateX(3px); }
 .is-link:hover { border-color: color-mix(in srgb, var(--highlight) 55%, var(--edge)); }
 
 /* Publications */
@@ -288,7 +292,7 @@ div.card { cursor: default; }
   .site-header { top: 8px; padding: 0 10px; }
   .nav { padding: 6px 8px 6px 14px; gap: 10px; }
   .brand { font-size: 1rem; }
-  .hero { padding: 96px 16px 32px; }
+  .hero { padding: 90px 16px 40px; }
   .hero-card { grid-template-columns: 1fr; border-radius: 22px; }
   .hero-avatar { width: 128px; height: 128px; border-radius: 24px; }
   h2 .num { font-size: 2.6em; top: -.5em; }

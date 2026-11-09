@@ -7,7 +7,7 @@ Personal website for Annabelle Yao. Plain static HTML/CSS/JS, no build step.
 - `index.html` — the single page (hero, about, experience, research, projects, organizations, awards, contact)
 - `styles.css` — design tokens (light + dark), layout, responsive rules
 - `script.js` — theme toggle, nav highlight, one IntersectionObserver fade-up reveal; no animation libraries
-- `assets/annabelle.jpg` — portrait; `assets/hero-alps.jpg` — hero background; `assets/bg-seceda.jpg` — fixed backdrop behind the content; `assets/favicon.svg` + PNG sizes — maple-leaf icon; `assets/*_Poster.pdf` — research posters
+- `assets/annabelle.jpg` — portrait; `assets/hero-alps.jpg` — hero background; `assets/bg-seceda.jpg` — fixed backdrop behind the content; `assets/icon-512.png`, `favicon-32.png`, `apple-touch-icon.png` — maple-leaf icon (from the watercolor artwork); `assets/*_Poster.pdf` — research posters
 
 ## Preview locally
 
