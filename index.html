@@ -1,26 +1,43 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Annabelle Yao</title>
-  <meta name="description" content="Annabelle Yao — Math & Computer Science and Economics at Yale. Machine learning researcher working on geometric deep learning for RNA design, vision transformers, game-playing agents and quantitative finance.">
+  <meta name="description" content="Annabelle Yao — Math & Computer Science and Economics at Yale. Machine learning researcher working on geometric deep learning for RNA design, vision transformers, learning in games and quantitative finance.">
   <meta property="og:title" content="Annabelle Yao">
   <meta property="og:description" content="Math & CS + Economics @ Yale ’30. ML researcher: RNA inverse folding, vision transformers, learning in games, quant research.">
   <meta property="og:image" content="https://maplesyxy.github.io/assets/annabelle.jpg">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f2a44'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='34' fill='%23f3eee4' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%23d9531e' d='M50 2 57 20 70 10 66 30 85 24 75 42 96 48 78 58 88 76 68 70 70 92 55 78 52 98 48 98 45 78 30 92 32 70 12 76 22 58 4 48 25 42 15 24 34 30 30 10 43 20Z'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="leafGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#f2a541"/>
+        <stop offset=".55" stop-color="#d9531e"/>
+        <stop offset="1" stop-color="#8f2d12"/>
+      </linearGradient>
+      <symbol id="maple" viewBox="0 0 100 104">
+        <path fill="url(#leafGrad)" d="M50 2 57 20 70 10 66 30 85 24 75 42 96 48 78 58 88 76 68 70 70 92 55 78 52 98 48 98 45 78 30 92 32 70 12 76 22 58 4 48 25 42 15 24 34 30 30 10 43 20Z"/>
+        <path fill="none" stroke="#8f2d12" stroke-width="1.2" stroke-linecap="round" opacity=".7" d="M50 96V30M50 52 30 34M50 52 70 34M50 68 36 60M50 68 64 60"/>
+        <path stroke="#6b2410" stroke-width="2.4" stroke-linecap="round" d="M50 98v5"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <div class="wind" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="leaf-wipe" aria-hidden="true"><svg><use href="#maple"/></svg></div>
+
   <a class="skip" href="#about">Skip to content</a>
 
   <header class="site-header">
     <nav class="nav glass" aria-label="Primary">
-      <a class="brand" href="#top">A<span>.</span>Y</a>
+      <a class="brand" href="#top"><svg class="brand-leaf" aria-hidden="true"><use href="#maple"/></svg>Annabelle Yao</a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
@@ -28,8 +45,8 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#organizations">Organizations</a></li>
         <li><a href="#awards">Awards</a></li>
-        <li><a href="#contact">Contact</a></li>
       </ul>
+      <a class="btn btn-nav" href="#contact">Say hello <span aria-hidden="true">›</span></a>
       <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle theme">
         <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
         <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
@@ -37,38 +54,37 @@
     </nav>
   </header>
 
-  <main id="top">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-text">
-        <p class="eyebrow">Yale ’30 · Math &amp; Computer Science, Economics</p>
-        <h1 class="chrome-text">Annabelle Yao</h1>
-        <p class="lede">
-          I build machine-learning systems and study the math underneath them. Recent work spans
-          geometric deep learning for RNA design, event-camera vision transformers, interpretable
-          medical imaging, learning agents for strategy games, and ML-driven signal research in
-          quantitative finance.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="mailto:annabelle.yao@yale.edu">Get in touch</a>
-          <a class="btn btn-ghost" href="#research">Read the research</a>
-        </div>
-        <ul class="social" aria-label="Profiles">
-          <li><a href="https://github.com/Maplesyxy" target="_blank" rel="noopener me" aria-label="GitHub">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12.2c0 5.2 3.3 9.6 7.9 11.1.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.2-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 1.9 1.2 3.2 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.9 7.9-11.1A11.5 11.5 0 0 0 12 .5z"/></svg><span>GitHub</span></a></li>
-          <li><a href="https://www.linkedin.com/in/annabelle-yao-055602302/" target="_blank" rel="noopener me" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.4 20.4h-3.5v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.1 2.1 2.1 0 0 1 0 4.1zM7.1 20.4H3.6V9h3.5v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.5c0 1 .8 1.8 1.8 1.8h20.4c1 0 1.8-.8 1.8-1.8V1.7c0-1-.8-1.7-1.8-1.7z"/></svg><span>LinkedIn</span></a></li>
-          <li><a href="https://scholar.google.com/citations?user=dfx8YmQAAAAJ&amp;hl=en" target="_blank" rel="noopener me" aria-label="Google Scholar">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 3 1 10l11 7 9-5.7V18h2v-8zM5.5 14.6V19c0 1.7 2.9 3 6.5 3s6.5-1.3 6.5-3v-4.4L12 18.7z"/></svg><span>Scholar</span></a></li>
-          <li><a href="mailto:annabelle.yao@yale.edu" aria-label="Email">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>Email</span></a></li>
-        </ul>
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true">
+      <img src="assets/hero-dolomites.jpg" alt="" width="1000" height="563" fetchpriority="high">
+    </div>
+    <div class="hero-panel glass">
+      <img class="hero-avatar" src="assets/annabelle.jpg" alt="Portrait of Annabelle Yao" width="112" height="112" loading="eager">
+      <p class="eyebrow">Yale ’30 · Math &amp; Computer Science · Economics</p>
+      <h1>Annabelle Yao</h1>
+      <p class="lede">
+        I build machine-learning systems and study the math underneath them: geometric deep learning for
+        RNA design, event-camera vision transformers, interpretable medical imaging, learning agents for
+        strategy games, and signal research in quantitative finance.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#research">Read the research <span aria-hidden="true">›</span></a>
+        <a class="btn btn-ghost" href="mailto:annabelle.yao@yale.edu">Get in touch <span aria-hidden="true">›</span></a>
       </div>
-      <figure class="hero-portrait glass tilt" data-tilt-max="8">
-        <img src="assets/annabelle.jpg" alt="Portrait of Annabelle Yao" width="260" height="260" loading="eager">
-      </figure>
-    </section>
+      <ul class="social" aria-label="Profiles">
+        <li><a href="https://github.com/Maplesyxy" target="_blank" rel="noopener me" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12.2c0 5.2 3.3 9.6 7.9 11.1.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.2-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 1.9 1.2 3.2 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.9 7.9-11.1A11.5 11.5 0 0 0 12 .5z"/></svg><span>GitHub</span></a></li>
+        <li><a href="https://www.linkedin.com/in/annabelle-yao-055602302/" target="_blank" rel="noopener me" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20.4 20.4h-3.5v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.1 2.1 2.1 0 0 1 0 4.1zM7.1 20.4H3.6V9h3.5v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.5c0 1 .8 1.8 1.8 1.8h20.4c1 0 1.8-.8 1.8-1.8V1.7c0-1-.8-1.7-1.8-1.7z"/></svg><span>LinkedIn</span></a></li>
+        <li><a href="https://scholar.google.com/citations?user=dfx8YmQAAAAJ&amp;hl=en" target="_blank" rel="noopener me" aria-label="Google Scholar">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 3 1 10l11 7 9-5.7V18h2v-8zM5.5 14.6V19c0 1.7 2.9 3 6.5 3s6.5-1.3 6.5-3v-4.4L12 18.7z"/></svg><span>Scholar</span></a></li>
+      </ul>
+    </div>
+    <a class="scroll-cue" href="#about" aria-label="Scroll to content">↓</a>
+  </section>
 
+  <main>
     <!-- ABOUT -->
     <section id="about" class="section">
       <div class="section-head">
@@ -78,35 +94,30 @@
         <div class="prose">
           <p>
             I’m a first-year at Yale studying Math &amp; Computer Science and Economics, a Hillhouse Fellow,
-            and an analyst in the technology sector of the Yale Student Investment Group. I like creating
-            new things and am almost always working on a project.
+            and a tech sector analyst in the Yale Student Investment Group.
           </p>
           <p>
-            My research so far has lived at the intersection of deep learning and the sciences:
-            a GVP-GCN + Transformer for RNA inverse folding that beat RDesign, RiboLogic and LEARNA on
-            RNA-Puzzles, a custom Vision Transformer for sparse event-camera data, and an interpretable
-            Grad-CAM ViT for early Alzheimer’s diagnosis from MRI. As a quant research intern I applied the
-            same toolkit to financial signal prediction.
+            What I most want to work on is learning in games: architectures and training frameworks where an
+            agent’s objective is set by other adaptive agents rather than by a fixed dataset. Static benchmarks
+            like ARC-AGI measure a model once, against a frozen target. Multi-agent settings move the target:
+            the best response changes as opponents learn, equilibria shift, and generalization means adapting
+            online to a strategy you have never seen. I’m interested in model classes built for that regime,
+            combining game-theoretic solution concepts with deep learning, learned opponent models and
+            self-play curricula, so that evaluation itself becomes adaptive instead of a one-shot score.
           </p>
           <p>
-            Lately I’ve been drawn to learning in games: how deep learning and game theory meet when agents
-            have to plan against each other. With teammates I’ve been building competitive bots for
-            Citadel’s Terminal and Cambridge Battlecode, including fast combat simulators, opponent
-            build-order predictors, and self-play win matrices of hundreds of games that decide which
-            strategy ships. I’m taking Game Theory and ML in Algorithmic Trading alongside, and I want to
-            push this toward multi-agent reinforcement learning.
-          </p>
-          <p>
-            Before Yale I graduated cum laude from The Lawrenceville School as a Hutchins Jefferson
-            Science Scholar and was named a 2026 U.S. Presidential Scholar. I also founded a student
-            science publication and a STEM nonprofit; those live under <a href="#organizations">Organizations</a>.
+            My background is computational biology and medical ML: a GVP-GCN + Transformer for RNA inverse
+            folding, an interpretable Grad-CAM Vision Transformer for early Alzheimer’s diagnosis, a sparse
+            event-camera ViT, and a summer in a liver-cancer lab designing antisense oligonucleotides. Before
+            Yale I graduated cum laude from The Lawrenceville School and was named a 2026 U.S. Presidential
+            Scholar; the things I founded there live under <a href="#organizations">Organizations</a>.
           </p>
         </div>
         <aside class="facts">
           <dl>
             <div class="glass"><dt>Based in</dt><dd>New Haven, CT</dd></div>
             <div class="glass"><dt>Studying</dt><dd>Math &amp; CS · Economics</dd></div>
-            <div class="glass"><dt>Interests</dt><dd>Geometric deep learning · Learning in games · Vision transformers · Quant research</dd></div>
+            <div class="glass"><dt>Interests</dt><dd>Learning in games · Game theory · Multi-agent RL · Geometric deep learning</dd></div>
             <div class="glass"><dt>Stack</dt><dd>Python · C++ · JavaScript · PyTorch · PyTorch Geometric · Transformers · scikit-learn · XGBoost · LightGBM</dd></div>
           </dl>
         </aside>
@@ -123,10 +134,10 @@
           <div class="when">Aug 2026 –</div>
           <div class="what glass">
             <h3>Yale University</h3>
-            <p class="role">Hillhouse Fellow · Analyst, Technology Sector, Yale Student Investment Group</p>
+            <p class="role">Hillhouse Fellow · Tech Sector Analyst, Yale Student Investment Group</p>
             <p>
-              One of seven Hillhouse Fellows in the class of 2030. At YSIG I cover the technology sector for
-              the student-managed fund: most recently a short pitch on Synopsys (SNPS), and before that a short
+              One of seven Hillhouse Fellows in the class of 2030. At YSIG, a student-managed fund with $450K+
+              AUM, I cover the technology sector: most recently a short pitch on Synopsys (SNPS), and before that a short
               on Reddit (RDDT) ahead of its Q2 2026 earnings, after which the stock fell.
             </p>
           </div>
@@ -153,28 +164,27 @@
         </li>
         <li>
           <div class="when">Aug 2025 – Jun 2026</div>
-          <div class="what glass">
+          <div class="what glass is-link">
             <h3>MIT CSAIL <span class="muted">· Mantis AI</span></h3>
-            <p class="role">Research Team Leader</p>
+            <p class="role">Research Team Leader · <a class="role-link" href="https://compbio.mit.edu/" target="_blank" rel="noopener">Kellis Lab</a> · <a class="role-link" href="https://home.withmantis.com/" target="_blank" rel="noopener">Mantis</a></p>
             <p>
               Recruited by Prof. Manolis Kellis for Mantis, the first cartography-based AI search platform;
               appointed to the student leadership team within five months, lectured in the MIT IAP course on
               the news vertical I built, and drafted the project’s first business plan for seed-round pitches.
-              Separately benchmarked PyTorch models for clinical-trial toxicity prediction on TDC ClinTox,
-              reaching 0.85–0.88 test AUROC.
             </p>
+            <a class="btn btn-card stretched" href="https://home.withmantis.com/" target="_blank" rel="noopener">Check out Mantis <span aria-hidden="true">›</span></a>
           </div>
         </li>
         <li>
           <div class="when">Jun – Jul 2025</div>
           <div class="what glass">
-            <h3>Thomas Jefferson University <span class="muted">· Dang Lab, Sidney Kimmel Cancer Center</span></h3>
-            <p class="role">Hutchins Science Scholar · Research Intern</p>
+            <h3>Thomas Jefferson University <span class="muted">· Sidney Kimmel Cancer Center</span></h3>
+            <p class="role">Hutchins Science Scholar · Research Intern, <a class="role-link" href="https://research.jefferson.edu/labs/researcher/dang-laboratory.html" target="_blank" rel="noopener">Dang Lab</a></p>
             <p>
-              Eight-week paid wet-lab internship studying antisense oligonucleotides that induce NELFE exon
-              skipping in hepatocellular carcinoma. Ran 40+ PCRs, Western blots, mouse dissections and IVIS
-              imaging; first author of the resulting 13-page report; shadowed five surgeries including two
-              liver transplants.
+              Eight-week paid wet-lab internship working toward a new liver-cancer treatment: antisense
+              oligonucleotides that knock down the oncogenic protein NELFE in hepatocellular carcinoma. Ran 40+
+              PCRs, Western blots, mouse dissections and IVIS imaging; first author of the resulting 13-page
+              report; shadowed five surgeries including two liver transplants.
             </p>
           </div>
         </li>
@@ -212,7 +222,27 @@
             </p>
             <p class="links">
               <a href="https://arxiv.org/abs/2601.00895" target="_blank" rel="noopener">arXiv</a>
+              <a href="assets/RNA_Poster.pdf" target="_blank" rel="noopener">Poster</a>
               <a href="https://github.com/Maplesyxy/GVP-Transformer-for-RNA-Design" target="_blank" rel="noopener">Code</a>
+            </p>
+          </div>
+        </li>
+        <li class="pub glass tilt">
+          <div class="pub-year">2025</div>
+          <div class="pub-body">
+            <h3><a href="assets/Jefferson_Poster.pdf" target="_blank" rel="noopener">Targeting NELFE Splicing with Antisense Oligonucleotides in Hepatocellular Carcinoma</a></h3>
+            <p class="pub-meta">A. Yao, L. Reynolds, H. Dang · <a class="role-link" href="https://research.jefferson.edu/labs/researcher/dang-laboratory.html" target="_blank" rel="noopener">Dang Lab</a>, Thomas Jefferson University · report and poster</p>
+            <p>
+              A step toward a new treatment for liver cancer. Hepatocellular carcinoma is the most common liver
+              cancer and one of the deadliest, and the RNA-binding protein NELFE drives its growth. We designed
+              antisense oligonucleotides that force NELFE exon-10 skipping, mimicking a naturally protective
+              variant, and showed they lower NELFE protein in Huh1 and Huh7 cells: the crucial first step before
+              delivering the ASOs to tumors in vivo. Data from 44 PCRs, 10 Western blots and five weeks of IVIS
+              imaging; first-author 13-page report.
+            </p>
+            <p class="links">
+              <a href="assets/Jefferson_Poster.pdf" target="_blank" rel="noopener">Poster</a>
+              <a href="https://research.jefferson.edu/labs/researcher/dang-laboratory.html" target="_blank" rel="noopener">Dang Lab</a>
             </p>
           </div>
         </li>
@@ -227,18 +257,6 @@
               clustering, t-SNE and a CatBoost classifier.
             </p>
             <p class="links"><a href="https://arxiv.org/abs/2601.00896" target="_blank" rel="noopener">arXiv</a></p>
-          </div>
-        </li>
-        <li class="pub glass tilt">
-          <div class="pub-year">2025</div>
-          <div class="pub-body">
-            <h3>Splice-switching antisense oligonucleotides against NELFE in hepatocellular carcinoma</h3>
-            <p class="pub-meta">A. Yao, with the Dang Lab · Thomas Jefferson University · internal report and poster</p>
-            <p>
-              Wet-lab project testing whether ASOs that force NELFE exon-10 skipping reproduce the effect of a
-              protective SNP in liver cancer cells and mouse models. Data from 44 PCRs, 10 Western blots and
-              five weeks of IVIS imaging; first-author 13-page report presented at the Lawrenceville science showcase.
-            </p>
           </div>
         </li>
         <li class="pub glass tilt">
@@ -281,43 +299,47 @@
         <h2><span class="num">04</span>Projects</h2>
         <a class="section-link" href="https://github.com/Maplesyxy" target="_blank" rel="noopener">All repositories ↗</a>
       </div>
-      <div class="cards">
+      <div class="cards cards-2">
         <div class="card glass tilt">
-          <h3>Citadel High-School Terminal 2026</h3>
-          <p class="role">1st place, national competition · team of three</p>
-          <p>Algorithmic strategy for Citadel’s Terminal tower-defense game: a fast combat simulator, an opponent build-order predictor, and an attack planner that uses both.</p>
-          <span class="tag">Python · Game AI · Simulation</span>
-        </div>
-        <div class="card glass tilt">
-          <h3>Cambridge Battlecode 2026</h3>
-          <p class="role">Ladder bots · ongoing</p>
-          <p>C++ agents for a multi-champion resource game, judged on a self-play win matrix across every map and seat, with headless replay decoding to study the top teams.</p>
-          <span class="tag">C++ · Multi-agent · Tooling</span>
-        </div>
-        <a class="card glass tilt" href="https://github.com/Maplesyxy/Patch_Htn26" target="_blank" rel="noopener">
-          <h3>Patch</h3>
-          <p class="role">Hack the North 2026</p>
-          <p>From customer bug report to reproduced bug to verified fix: a reproduction swarm where an execution agent drives the browser, a supervisor directs experiments, and an implementation agent receives the evidence packet.</p>
-          <span class="tag">Next.js · Playwright · Multi-agent</span>
-        </a>
-        <a class="card glass tilt" href="https://github.com/Maplesyxy/Mantis-Work" target="_blank" rel="noopener">
           <h3>Clinical-trial outcome models</h3>
-          <p class="role">MIT CSAIL · Mantis</p>
-          <p>Benchmarks for clinical-trial toxicity prediction on TDC ClinTox: Morgan-fingerprint MLPs and AffinityNet embeddings against a SMILES transformer, 0.85–0.88 test AUROC.</p>
+          <p class="role">MIT CSAIL · <a class="role-link" href="https://compbio.mit.edu/" target="_blank" rel="noopener">Kellis Lab</a> · <a class="role-link" href="https://home.withmantis.com/" target="_blank" rel="noopener">Mantis</a></p>
+          <p>Benchmarks for clinical-trial toxicity prediction on TDC ClinTox: Morgan-fingerprint MLPs and AffinityNet embeddings against a SMILES transformer, 0.85–0.88 test AUROC. Built inside the Mantis platform’s science task force.</p>
+          <p class="links">
+            <a href="https://github.com/Maplesyxy/Mantis-Work" target="_blank" rel="noopener">Code</a>
+            <a href="https://home.withmantis.com/" target="_blank" rel="noopener">Mantis</a>
+          </p>
           <span class="tag">PyTorch · Cheminformatics</span>
-        </a>
-        <a class="card glass tilt" href="https://github.com/Maplesyxy/GVP-Transformer-for-RNA-Design" target="_blank" rel="noopener">
+        </div>
+        <div class="card glass tilt">
           <h3>GVP-Transformer for RNA Design</h3>
-          <p class="role">Research code</p>
-          <p>Geometric deep-learning framework for RNA inverse folding from 3D backbone structure, trained on two rented RTX 4090s.</p>
+          <p class="role">Research code · ISEF 2025</p>
+          <p>Geometric deep-learning framework for RNA inverse folding from 3D backbone structure: six torsion angles and C4′ displacement vectors in a local frame, a GVP-GCN encoder and a Transformer decoder, trained on two rented RTX 4090s.</p>
+          <p class="links">
+            <a href="https://github.com/Maplesyxy/GVP-Transformer-for-RNA-Design" target="_blank" rel="noopener">Code</a>
+            <a href="https://arxiv.org/abs/2601.00895" target="_blank" rel="noopener">Paper</a>
+          </p>
           <span class="tag">Python · PyTorch Geometric</span>
-        </a>
-        <a class="card glass tilt" href="https://github.com/Maplesyxy/NN_GradCam_for_AD" target="_blank" rel="noopener">
-          <h3>Grad-CAM ViT for Alzheimer’s</h3>
-          <p class="role">Research code</p>
-          <p>Interpretable early-diagnosis model on brain MRI with saliency heatmaps and an upload web app for clinicians.</p>
+        </div>
+        <div class="card glass tilt">
+          <h3>DVS Vision Transformer</h3>
+          <p class="role">Research code · UCSB SRA 2024</p>
+          <p>Vision Transformer for dynamic-vision-sensor event streams, built for efficient real-time gesture recognition; 32×32 patches reach 98.4% on DVS128 Gesture in five epochs.</p>
+          <p class="links">
+            <a href="https://github.com/Maplesyxy/DVS_ViT_Realtime" target="_blank" rel="noopener">Code</a>
+            <a href="https://www.ewadirect.com/proceedings/ace/article/view/17654" target="_blank" rel="noopener">Paper</a>
+          </p>
           <span class="tag">Jupyter · PyTorch</span>
-        </a>
+        </div>
+        <div class="card glass tilt">
+          <h3>Grad-CAM ViT for Alzheimer’s</h3>
+          <p class="role">Research code · ISEF 2024</p>
+          <p>Interpretable early-diagnosis model on ~6,400 ADNI brain MRIs with Grad-CAM saliency heatmaps and an upload web app for clinicians.</p>
+          <p class="links">
+            <a href="https://github.com/Maplesyxy/NN_GradCam_for_AD" target="_blank" rel="noopener">Code</a>
+            <a href="https://tns.ewapub.com/article/view/17082" target="_blank" rel="noopener">Paper</a>
+          </p>
+          <span class="tag">Jupyter · PyTorch</span>
+        </div>
       </div>
     </section>
 
@@ -386,43 +408,60 @@
     <section id="awards" class="section">
       <div class="section-head">
         <h2><span class="num">06</span>Awards &amp; Honors</h2>
+        <ul class="legend" aria-label="Award level key">
+          <li data-level="international">International</li>
+          <li data-level="national">National</li>
+          <li data-level="regional">Regional</li>
+          <li data-level="school">School</li>
+        </ul>
       </div>
       <ul class="awards">
-        <li class="glass"><span class="award-year">2026</span><div><strong>U.S. Presidential Scholar</strong><span>One of 161 scholars selected from 3.9 million graduates; the female scholar for New Jersey.</span></div></li>
-        <li class="glass"><span class="award-year">2026</span><div><strong>Citadel High-School Terminal, 1st Place</strong><span>National AI strategy competition, team of three.</span></div></li>
-        <li class="glass"><span class="award-year">2026</span><div><strong>Jane Street WiSE Estimathon, 1st Place</strong><span>Team estimation contest at Jane Street’s Women in STEM program.</span></div></li>
-        <li class="glass"><span class="award-year">2026</span><div><strong>Tencent Technology Youth Camp, International Top 50</strong><span>AI hackathon with 50,000+ entrants.</span></div></li>
-        <li class="glass"><span class="award-year">2026</span><div><strong>National Merit Scholarship Finalist</strong><span>PSAT 1520/1520.</span></div></li>
-        <li class="glass"><span class="award-year">2026</span><div><strong>NCWIT Aspirations in Computing, National Honorable Mention</strong><span>Top 300 of 2,700 applicants; second consecutive year.</span></div></li>
-        <li class="glass"><span class="award-year">2026</span><div><strong>Cum Laude, The Lawrenceville School</strong><span>Highest honor given to graduating class members.</span></div></li>
-        <li class="glass"><span class="award-year">2026</span><div><strong>Susquehanna (SIG) Virtual High School Discovery Event</strong><span>Selected participant.</span></div></li>
-        <li class="glass"><span class="award-year">2025</span><div><strong>NCWIT Aspirations in Computing, National Honorable Mention</strong><span>Top 10% nationally for technical skill and leadership.</span></div></li>
-        <li class="glass"><span class="award-year">2025</span><div><strong>USA Computing Olympiad, Platinum</strong><span>Highest USACO division, certified score.</span></div></li>
-        <li class="glass"><span class="award-year">2025</span><div><strong>Yale Science Fair Award</strong><span>Yale Science &amp; Engineering Association, one per ISEF-affiliated fair; RNA inverse-folding project.</span></div></li>
-        <li class="glass"><span class="award-year">2025</span><div><strong>Mercer Science &amp; Engineering Fair, 1st Place</strong><span>Senior division, RNA inverse-folding project; ISEF finalist alternate.</span></div></li>
-        <li class="glass"><span class="award-year">2025</span><div><strong>Anson L. Clark Scholars, Accepted</strong><span>Computer-science track, 12 students nationally; declined for the Jefferson internship.</span></div></li>
-        <li class="glass"><span class="award-year">2024</span><div><strong>Mercer Science &amp; Engineering Fair, 1st Place</strong><span>Senior division, Alzheimer’s early-diagnosis project; ISEF finalist alternate.</span></div></li>
-        <li class="glass"><span class="award-year">2024</span><div><strong>Regeneron Biomedical Science Award</strong><span>ISEF special award for significant scientific and technical innovation within the area of computational biology.</span></div></li>
-        <li class="glass"><span class="award-year">2024</span><div><strong>U.S. Air Force Research Laboratory Award</strong><span>ISEF special award for scientific and technical innovation.</span></div></li>
-        <li class="glass"><span class="award-year">2024</span><div><strong>Junior World Cup, Women’s Sabre</strong><span>Represented Hong Kong, Spain 2024.</span></div></li>
-        <li class="glass"><span class="award-year">2023–26</span><div><strong>Hutchins Jefferson Science Scholar</strong><span>One of 3 of 230 selected for Lawrenceville’s two-year research program with Thomas Jefferson University.</span></div></li>
-        <li class="glass"><span class="award-year">2023</span><div><strong>American Rocketry Challenge, National Finalist</strong><span>Team ranked 67th of 798.</span></div></li>
-        <li class="glass"><span class="award-year">2022</span><div><strong>Uber Global Hackathon, Asia Winner</strong><span>Global top 15 of 732 teams; UberHealth pandemic-travel app.</span></div></li>
+        <li class="glass" data-level="national"><span class="award-year">2026</span><div><strong>U.S. Presidential Scholar</strong><span>One of 161 scholars selected from 3.9 million graduates; the female scholar for New Jersey.</span></div><span class="level">National</span></li>
+        <li class="glass" data-level="national"><span class="award-year">2026</span><div><strong>Citadel High-School Terminal, 1st Place</strong><span>National AI and competitive-programming strategy competition, team of three.</span></div><span class="level">National</span></li>
+        <li class="glass" data-level="national"><span class="award-year">2026</span><div><strong>Jane Street WiSE Estimathon, 1st Place</strong><span>Team estimation contest at Jane Street’s Women in STEM program.</span></div><span class="level">National</span></li>
+        <li class="glass" data-level="international"><span class="award-year">2026</span><div><strong>Tencent Technology Youth Camp, International Top 50</strong><span>AI hackathon with 50,000+ entrants.</span></div><span class="level">International</span></li>
+        <li class="glass" data-level="national"><span class="award-year">2026</span><div><strong>National Merit Scholarship Finalist</strong><span>PSAT 1520/1520.</span></div><span class="level">National</span></li>
+        <li class="glass" data-level="national"><span class="award-year">2026</span><div><strong>NCWIT Aspirations in Computing, National Honorable Mention</strong><span>Top 300 of 2,700 applicants; second consecutive year.</span></div><span class="level">National</span></li>
+        <li class="glass" data-level="school"><span class="award-year">2026</span><div><strong>Cum Laude, The Lawrenceville School</strong><span>Highest honor given to graduating class members.</span></div><span class="level">School</span></li>
+        <li class="glass" data-level="national"><span class="award-year">2026</span><div><strong>Susquehanna (SIG) Virtual High School Discovery Event</strong><span>Selected participant.</span></div><span class="level">National</span></li>
+        <li class="glass" data-level="national"><span class="award-year">2025</span><div><strong>NCWIT Aspirations in Computing, National Honorable Mention</strong><span>Top 10% nationally for technical skill and leadership.</span></div><span class="level">National</span></li>
+        <li class="glass" data-level="national"><span class="award-year">2025</span><div><strong>USA Computing Olympiad, Platinum</strong><span>Highest USACO division, certified score.</span></div><span class="level">National</span></li>
+        <li class="glass" data-level="regional"><span class="award-year">2025</span><div><strong>Yale Science Fair Award</strong><span>Yale Science &amp; Engineering Association, one per ISEF-affiliated fair; RNA inverse-folding project.</span></div><span class="level">Regional</span></li>
+        <li class="glass" data-level="regional"><span class="award-year">2025</span><div><strong>Mercer Science &amp; Engineering Fair, 1st Place</strong><span>Senior division, RNA inverse-folding project; ISEF finalist alternate.</span></div><span class="level">Regional</span></li>
+        <li class="glass" data-level="national"><span class="award-year">2025</span><div><strong>Anson L. Clark Scholars, Accepted</strong><span>Computer-science track, 12 students nationally; declined for the Jefferson internship.</span></div><span class="level">National</span></li>
+        <li class="glass" data-level="regional"><span class="award-year">2024</span><div><strong>Mercer Science &amp; Engineering Fair, 1st Place</strong><span>Senior division, Alzheimer’s early-diagnosis project; ISEF finalist alternate.</span></div><span class="level">Regional</span></li>
+        <li class="glass" data-level="regional"><span class="award-year">2024</span><div><strong>Regeneron Biomedical Science Award</strong><span>ISEF special award for significant scientific and technical innovation within the area of computational biology.</span></div><span class="level">Regional</span></li>
+        <li class="glass" data-level="regional"><span class="award-year">2024</span><div><strong>U.S. Air Force Research Laboratory Award</strong><span>ISEF special award for scientific and technical innovation.</span></div><span class="level">Regional</span></li>
+        <li class="glass" data-level="international"><span class="award-year">2024</span><div><strong>Junior World Cup, Women’s Sabre</strong><span>Represented Hong Kong, Spain 2024.</span></div><span class="level">International</span></li>
+        <li class="glass" data-level="school"><span class="award-year">2023–26</span><div><strong>Hutchins Jefferson Science Scholar</strong><span>One of 3 of 230 selected for Lawrenceville’s two-year research program with Thomas Jefferson University.</span></div><span class="level">School</span></li>
+        <li class="glass" data-level="national"><span class="award-year">2023</span><div><strong>American Rocketry Challenge, National Finalist</strong><span>Team ranked 67th of 798.</span></div><span class="level">National</span></li>
+        <li class="glass" data-level="international"><span class="award-year">2022</span><div><strong>Uber Global Hackathon, Asia Winner</strong><span>Global top 15 of 732 teams; UberHealth pandemic-travel app.</span></div><span class="level">International</span></li>
       </ul>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section contact">
-      <div class="contact-card glass">
-        <h2>Say hello</h2>
-        <p>I’m always happy to talk about research, projects, or anything at the intersection of math, ML and the sciences.</p>
-        <a class="btn btn-primary" href="mailto:annabelle.yao@yale.edu">annabelle.yao@yale.edu</a>
-      </div>
     </section>
   </main>
 
+  <!-- CONTACT: the leaf lands here -->
+  <section id="contact" class="ground">
+    <div class="ground-inner">
+      <div class="leaf-ground" aria-hidden="true"><svg><use href="#maple"/></svg></div>
+      <div class="ground-card glass">
+        <p class="eyebrow">Say hello</p>
+        <h2>Hi, I’m Annabelle. You might also know me as <em>Maple</em>.</h2>
+        <p>
+          Maple is the name I go by in competitive programming and at hackathons. Reach out for research
+          collaborations, projects, or anything at the intersection of math, machine learning and the sciences.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="mailto:annabelle.yao@yale.edu">annabelle.yao@yale.edu <span aria-hidden="true">›</span></a>
+          <a class="btn btn-ghost" href="https://github.com/Maplesyxy" target="_blank" rel="noopener">github.com/Maplesyxy <span aria-hidden="true">›</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="ground-line" aria-hidden="true"></div>
+  </section>
+
   <footer class="site-footer">
-    <p>© <span id="year"></span> Annabelle Yao</p>
+    <p>© <span id="year"></span> Annabelle Yao · Hero photo: Lago d’Antorno, Dolomites (Rawpixel)</p>
     <p class="footer-links">
       <a href="https://github.com/Maplesyxy" target="_blank" rel="noopener">GitHub</a>
       <a href="https://www.linkedin.com/in/annabelle-yao-055602302/" target="_blank" rel="noopener">LinkedIn</a>
