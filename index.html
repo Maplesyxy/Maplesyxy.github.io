@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Annabelle Yao</title>
-  <meta name="description" content="Annabelle Yao — Math & Computer Science and Economics at Yale. Machine learning researcher working on vision transformers, geometric deep learning for RNA design, and quantitative finance.">
+  <meta name="description" content="Annabelle Yao — Math & Computer Science and Economics at Yale. Machine learning researcher working on geometric deep learning for RNA design, vision transformers, game-playing agents and quantitative finance.">
   <meta property="og:title" content="Annabelle Yao">
-  <meta property="og:description" content="Math & CS + Economics @ Yale ’30. ML researcher: vision transformers, RNA inverse folding, quant research.">
+  <meta property="og:description" content="Math & CS + Economics @ Yale ’30. ML researcher: RNA inverse folding, vision transformers, learning in games, quant research.">
   <meta property="og:image" content="https://maplesyxy.github.io/assets/annabelle.jpg">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f2a44'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='34' fill='%23f3eee4' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,17 +15,18 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
   <a class="skip" href="#about">Skip to content</a>
 
   <header class="site-header">
-    <nav class="nav" aria-label="Primary">
+    <nav class="nav glass" aria-label="Primary">
       <a class="brand" href="#top">A<span>.</span>Y</a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#research">Research</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#earlier">Before Yale</a></li>
+        <li><a href="#organizations">Organizations</a></li>
         <li><a href="#awards">Awards</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -41,14 +42,16 @@
     <section class="hero">
       <div class="hero-text">
         <p class="eyebrow">Yale ’30 · Math &amp; Computer Science, Economics</p>
-        <h1>Annabelle Yao</h1>
+        <h1 class="chrome-text">Annabelle Yao</h1>
         <p class="lede">
           I build machine-learning systems and study the math underneath them. Recent work spans
-          event-camera vision transformers, geometric deep learning for RNA design, interpretable
-          medical imaging, and ML-driven signal research in quantitative finance.
+          geometric deep learning for RNA design, event-camera vision transformers, interpretable
+          medical imaging, learning agents for strategy games, and ML-driven signal research in
+          quantitative finance.
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="mailto:annabelle.yao@yale.edu">Get in touch</a>
+          <a class="btn btn-ghost" href="#research">Read the research</a>
         </div>
         <ul class="social" aria-label="Profiles">
           <li><a href="https://github.com/Maplesyxy" target="_blank" rel="noopener me" aria-label="GitHub">
@@ -61,7 +64,7 @@
             <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>Email</span></a></li>
         </ul>
       </div>
-      <figure class="hero-portrait">
+      <figure class="hero-portrait glass tilt" data-tilt-max="8">
         <img src="assets/annabelle.jpg" alt="Portrait of Annabelle Yao" width="260" height="260" loading="eager">
       </figure>
     </section>
@@ -69,33 +72,42 @@
     <!-- ABOUT -->
     <section id="about" class="section">
       <div class="section-head">
-        <h2>About</h2>
+        <h2><span class="num">01</span>About</h2>
       </div>
       <div class="about-grid">
         <div class="prose">
           <p>
-            I’m a first-year at Yale studying Math &amp; Computer Science and Economics, and a
-            Hillhouse Fellow. I like creating new things and am almost always working on a project.
+            I’m a first-year at Yale studying Math &amp; Computer Science and Economics, a Hillhouse Fellow,
+            and an analyst in the technology sector of the Yale Student Investment Group. I like creating
+            new things and am almost always working on a project.
           </p>
           <p>
             My research so far has lived at the intersection of deep learning and the sciences:
-            a custom Vision Transformer for sparse event-camera data, a GVP-GCN + Transformer for
-            RNA inverse folding that beat RDesign, RiboLogic and LEARNA on RNA-Puzzles, and an
-            interpretable Grad-CAM ViT for early Alzheimer’s diagnosis from MRI. Most recently I’ve
-            applied the same toolkit to financial signal prediction as a quant research intern.
+            a GVP-GCN + Transformer for RNA inverse folding that beat RDesign, RiboLogic and LEARNA on
+            RNA-Puzzles, a custom Vision Transformer for sparse event-camera data, and an interpretable
+            Grad-CAM ViT for early Alzheimer’s diagnosis from MRI. As a quant research intern I applied the
+            same toolkit to financial signal prediction.
+          </p>
+          <p>
+            Lately I’ve been drawn to learning in games: how deep learning and game theory meet when agents
+            have to plan against each other. With teammates I’ve been building competitive bots for
+            Citadel’s Terminal and Cambridge Battlecode, including fast combat simulators, opponent
+            build-order predictors, and self-play win matrices of hundreds of games that decide which
+            strategy ships. I’m taking Game Theory and ML in Algorithmic Trading alongside, and I want to
+            push this toward multi-agent reinforcement learning.
           </p>
           <p>
             Before Yale I graduated cum laude from The Lawrenceville School as a Hutchins Jefferson
-            Science Scholar and was named a 2026 U.S. Presidential Scholar. Along the way I founded a
-            student science publication and a STEM nonprofit; those live under <a href="#earlier">Before Yale</a>.
+            Science Scholar and was named a 2026 U.S. Presidential Scholar. I also founded a student
+            science publication and a STEM nonprofit; those live under <a href="#organizations">Organizations</a>.
           </p>
         </div>
         <aside class="facts">
           <dl>
-            <div><dt>Based in</dt><dd>New Haven, CT</dd></div>
-            <div><dt>Studying</dt><dd>Math &amp; CS · Economics</dd></div>
-            <div><dt>Interests</dt><dd>Machine learning · Vision transformers · RNA structure · Quant research</dd></div>
-            <div><dt>Stack</dt><dd>Python · C++ · JavaScript · PyTorch · PyTorch Geometric · Transformers · scikit-learn · XGBoost · LightGBM</dd></div>
+            <div class="glass"><dt>Based in</dt><dd>New Haven, CT</dd></div>
+            <div class="glass"><dt>Studying</dt><dd>Math &amp; CS · Economics</dd></div>
+            <div class="glass"><dt>Interests</dt><dd>Geometric deep learning · Learning in games · Vision transformers · Quant research</dd></div>
+            <div class="glass"><dt>Stack</dt><dd>Python · C++ · JavaScript · PyTorch · PyTorch Geometric · Transformers · scikit-learn · XGBoost · LightGBM</dd></div>
           </dl>
         </aside>
       </div>
@@ -104,20 +116,33 @@
     <!-- EXPERIENCE -->
     <section id="experience" class="section">
       <div class="section-head">
-        <h2>Experience</h2>
+        <h2><span class="num">02</span>Experience</h2>
       </div>
       <ol class="timeline">
         <li>
+          <div class="when">Aug 2026 –</div>
+          <div class="what glass">
+            <h3>Yale University</h3>
+            <p class="role">Hillhouse Fellow · Analyst, Technology Sector, Yale Student Investment Group</p>
+            <p>
+              One of seven Hillhouse Fellows in the class of 2030. At YSIG I cover the technology sector for
+              the student-managed fund.
+            </p>
+          </div>
+        </li>
+        <li>
           <div class="when">Jul 2026</div>
-          <div class="what">
-            <h3>Jane Street <span class="muted">· WiSE Program</span></h3>
-            <p>Participant in Jane Street’s Women in STEM program. First place in the WiSE Estimathon.</p>
+          <div class="what glass">
+            <h3>Jane Street</h3>
+            <p class="role">Participant, WiSE Program</p>
+            <p>Jane Street’s Women in STEM program. First place in the WiSE Estimathon.</p>
           </div>
         </li>
         <li>
           <div class="when">Jun – Jul 2026</div>
-          <div class="what">
-            <h3>Ruitian Capital <span class="muted">· Quant Research Intern</span></h3>
+          <div class="what glass">
+            <h3>Ruitian Capital</h3>
+            <p class="role">Quant Research Intern</p>
             <p>
               ML research on financial signal prediction at a $2B+ AUM fund. Built and backtested MLP and
               Transformer models with BARRA factor analysis, ran 72+ hyperparameter experiments, and
@@ -127,36 +152,40 @@
         </li>
         <li>
           <div class="when">Aug 2025 – Jun 2026</div>
-          <div class="what">
+          <div class="what glass">
             <h3>MIT CSAIL <span class="muted">· Mantis AI</span></h3>
+            <p class="role">Research Team Leader</p>
             <p>
-              Recruited for Mantis, the first cartography-based AI search platform; became team lead within
-              five months, lectured in the MIT IAP course, and drafted seed-round fundraising materials.
-              Separately benchmarked PyTorch models for clinical-trial toxicity prediction on TDC ClinTox
-              (Morgan-fingerprint MLPs and AffinityNet embeddings vs. a SMILES transformer), reaching
-              0.85–0.88 test AUROC.
+              Recruited by Prof. Manolis Kellis for Mantis, the first cartography-based AI search platform;
+              appointed to the student leadership team within five months, lectured in the MIT IAP course on
+              the news vertical I built, and drafted the project’s first business plan for seed-round pitches.
+              Separately benchmarked PyTorch models for clinical-trial toxicity prediction on TDC ClinTox,
+              reaching 0.85–0.88 test AUROC.
             </p>
           </div>
         </li>
         <li>
           <div class="when">Jun – Jul 2025</div>
-          <div class="what">
-            <h3>Thomas Jefferson University <span class="muted">· Hutchins Science Scholar, Dang Lab</span></h3>
+          <div class="what glass">
+            <h3>Thomas Jefferson University <span class="muted">· Dang Lab, Sidney Kimmel Cancer Center</span></h3>
+            <p class="role">Hutchins Science Scholar · Research Intern</p>
             <p>
-              Eight-week paid wet-lab internship in Dr. Hien Dang’s lab at the Sidney Kimmel Cancer Center, studying
-              antisense oligonucleotides that induce NELFE exon skipping in hepatocellular carcinoma. Ran 40+ PCRs,
-              Western blots, mouse dissections and IVIS imaging; first author of the resulting 13-page report; shadowed
-              five surgeries including two liver transplants.
+              Eight-week paid wet-lab internship studying antisense oligonucleotides that induce NELFE exon
+              skipping in hepatocellular carcinoma. Ran 40+ PCRs, Western blots, mouse dissections and IVIS
+              imaging; first author of the resulting 13-page report; shadowed five surgeries including two
+              liver transplants.
             </p>
           </div>
         </li>
         <li>
           <div class="when">Jun – Jul 2024</div>
-          <div class="what">
+          <div class="what glass">
             <h3>UCSB Summer Research Academy <span class="muted">· Neuromorphic Computing</span></h3>
+            <p class="role">Team Leader</p>
             <p>
-              Built a custom Vision Transformer in PyTorch for DVS128 Gesture event-camera data, exploiting
-              temporal sparsity to cut redundant computation while improving accuracy. 150+ research hours, 4.0 GPA.
+              Led a three-person team building a custom Vision Transformer in PyTorch for DVS128 Gesture
+              event-camera data, exploiting temporal sparsity to cut redundant computation while improving
+              accuracy. 150+ research hours, 4.0 GPA; first author on the resulting paper.
             </p>
           </div>
         </li>
@@ -166,51 +195,67 @@
     <!-- RESEARCH -->
     <section id="research" class="section">
       <div class="section-head">
-        <h2>Research &amp; Publications</h2>
+        <h2><span class="num">03</span>Research &amp; Publications</h2>
         <a class="section-link" href="https://scholar.google.com/citations?user=dfx8YmQAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar ↗</a>
       </div>
       <ol class="pubs">
-        <li class="pub">
+        <li class="pub glass tilt">
           <div class="pub-year">2025</div>
           <div class="pub-body">
             <h3><a href="https://arxiv.org/abs/2601.00895" target="_blank" rel="noopener">Deep Learning Framework for RNA Inverse Folding with Geometric Structure Potentials</a></h3>
-            <p class="pub-meta">A. Yao · arXiv:2601.00895 · Highlights in Science, Engineering and Technology</p>
+            <p class="pub-meta">A. Yao · arXiv:2601.00895 · Highlights in Science, Engineering and Technology (BLSME 2026)</p>
             <p>
               A GVP-GCN + Transformer that designs RNA sequences folding into a target 3D backbone. Curated
               6,300+ PDB structures (deduplicated to ~2,500 with CD-HIT) and reached 0.481 recovery / 0.332
               TM-score on RNA-Puzzles, ahead of RDesign, RiboLogic and LEARNA. ISEF 2025 research.
             </p>
-            <p class="pub-links">
+            <p class="links">
               <a href="https://arxiv.org/abs/2601.00895" target="_blank" rel="noopener">arXiv</a>
               <a href="https://github.com/Maplesyxy/GVP-Transformer-for-RNA-Design" target="_blank" rel="noopener">Code</a>
             </p>
           </div>
         </li>
-        <li class="pub">
+        <li class="pub glass tilt">
           <div class="pub-year">2025</div>
           <div class="pub-body">
             <h3><a href="https://arxiv.org/abs/2601.00896" target="_blank" rel="noopener">Investigation into US Citizen and Non-Citizen Worker Health Insurance and Employment</a></h3>
             <p class="pub-meta">A. Yao · arXiv:2601.00896</p>
-            <p>An empirical study of health-insurance coverage and employment outcomes across citizen and non-citizen workers in the United States.</p>
-            <p class="pub-links"><a href="https://arxiv.org/abs/2601.00896" target="_blank" rel="noopener">arXiv</a></p>
+            <p>
+              An empirical study of health-insurance coverage and employment outcomes across citizen and
+              non-citizen workers in the United States, using χ² and two-proportion tests, K-Prototypes
+              clustering, t-SNE and a CatBoost classifier.
+            </p>
+            <p class="links"><a href="https://arxiv.org/abs/2601.00896" target="_blank" rel="noopener">arXiv</a></p>
           </div>
         </li>
-        <li class="pub">
+        <li class="pub glass tilt">
+          <div class="pub-year">2025</div>
+          <div class="pub-body">
+            <h3>Splice-switching antisense oligonucleotides against NELFE in hepatocellular carcinoma</h3>
+            <p class="pub-meta">A. Yao, with the Dang Lab · Thomas Jefferson University · internal report and poster</p>
+            <p>
+              Wet-lab project testing whether ASOs that force NELFE exon-10 skipping reproduce the effect of a
+              protective SNP in liver cancer cells and mouse models. Data from 44 PCRs, 10 Western blots and
+              five weeks of IVIS imaging; first-author 13-page report presented at the Lawrenceville science showcase.
+            </p>
+          </div>
+        </li>
+        <li class="pub glass tilt">
           <div class="pub-year">2024</div>
           <div class="pub-body">
             <h3><a href="https://www.ewadirect.com/proceedings/ace/article/view/17654" target="_blank" rel="noopener">Enhancing Real-Time Vision Systems: Integrating Dynamic Vision Sensors with Vision Transformers to Increase Computational Efficiency</a></h3>
             <p class="pub-meta">A. Yao, O. Su · 2nd International Conference on Machine Learning and Automation · Applied and Computational Engineering</p>
             <p>
-              A custom ViT for sparse DVS128 Gesture event data that exploits temporal sparsity, improving
-              accuracy by 5% in five epochs at lower compute.
+              A custom ViT for sparse DVS128 Gesture event data that exploits temporal sparsity, reaching 98.4%
+              accuracy in five epochs against spiking-network baselines averaging 93.1%.
             </p>
-            <p class="pub-links">
+            <p class="links">
               <a href="https://www.ewadirect.com/proceedings/ace/article/view/17654" target="_blank" rel="noopener">Paper</a>
               <a href="https://github.com/Maplesyxy/DVS_ViT_Realtime" target="_blank" rel="noopener">Code</a>
             </p>
           </div>
         </li>
-        <li class="pub">
+        <li class="pub glass tilt">
           <div class="pub-year">2024</div>
           <div class="pub-body">
             <h3><a href="https://tns.ewapub.com/article/view/17082" target="_blank" rel="noopener">A Novel Interpretative Deep Neural Network with Grad-CAM’s Heatmap for the Early Diagnosis of Alzheimer’s Disease</a></h3>
@@ -220,7 +265,7 @@
               0.99 ROC-AUC and macro-F1 (vs. 0.96 XGBoost, 0.88 VGG-16), plus a web app for MRI upload.
               ISEF 2024 research; Regeneron Biomedical Science Award.
             </p>
-            <p class="pub-links">
+            <p class="links">
               <a href="https://tns.ewapub.com/article/view/17082" target="_blank" rel="noopener">Paper</a>
               <a href="https://github.com/Maplesyxy/NN_GradCam_for_AD" target="_blank" rel="noopener">Code</a>
             </p>
@@ -232,138 +277,142 @@
     <!-- PROJECTS -->
     <section id="projects" class="section">
       <div class="section-head">
-        <h2>Projects</h2>
+        <h2><span class="num">04</span>Projects</h2>
         <a class="section-link" href="https://github.com/Maplesyxy" target="_blank" rel="noopener">All repositories ↗</a>
       </div>
       <div class="cards">
-        <div class="card">
-          <h3>Citadel High-School Terminal 2026 <span class="muted">· 1st place</span></h3>
-          <p>Algorithmic strategy for Citadel’s Terminal tower-defense game, built with a team of three. Won the national high-school competition in July 2026.</p>
-          <span class="tag">Python · Game AI · Team</span>
+        <div class="card glass tilt">
+          <h3>Citadel High-School Terminal 2026</h3>
+          <p class="role">1st place, national competition · team of three</p>
+          <p>Algorithmic strategy for Citadel’s Terminal tower-defense game: a fast combat simulator, an opponent build-order predictor, and an attack planner that uses both.</p>
+          <span class="tag">Python · Game AI · Simulation</span>
         </div>
-        <a class="card" href="https://github.com/Maplesyxy/Patch_Htn26" target="_blank" rel="noopener">
-          <h3>Patch <span class="muted">· Hack the North 2026</span></h3>
+        <div class="card glass tilt">
+          <h3>Cambridge Battlecode 2026</h3>
+          <p class="role">Ladder bots · ongoing</p>
+          <p>C++ agents for a multi-champion resource game, judged on a self-play win matrix across every map and seat, with headless replay decoding to study the top teams.</p>
+          <span class="tag">C++ · Multi-agent · Tooling</span>
+        </div>
+        <a class="card glass tilt" href="https://github.com/Maplesyxy/Patch_Htn26" target="_blank" rel="noopener">
+          <h3>Patch</h3>
+          <p class="role">Hack the North 2026</p>
           <p>From customer bug report to reproduced bug to verified fix: a reproduction swarm where an execution agent drives the browser, a supervisor directs experiments, and an implementation agent receives the evidence packet.</p>
           <span class="tag">Next.js · Playwright · Multi-agent</span>
         </a>
-        <a class="card" href="https://github.com/Maplesyxy/Mantis-Work" target="_blank" rel="noopener">
-          <h3>Clinical-trial outcome models <span class="muted">· MIT CSAIL</span></h3>
+        <a class="card glass tilt" href="https://github.com/Maplesyxy/Mantis-Work" target="_blank" rel="noopener">
+          <h3>Clinical-trial outcome models</h3>
+          <p class="role">MIT CSAIL · Mantis</p>
           <p>Benchmarks for clinical-trial toxicity prediction on TDC ClinTox: Morgan-fingerprint MLPs and AffinityNet embeddings against a SMILES transformer, 0.85–0.88 test AUROC.</p>
           <span class="tag">PyTorch · Cheminformatics</span>
+        </a>
+        <a class="card glass tilt" href="https://github.com/Maplesyxy/GVP-Transformer-for-RNA-Design" target="_blank" rel="noopener">
+          <h3>GVP-Transformer for RNA Design</h3>
+          <p class="role">Research code</p>
+          <p>Geometric deep-learning framework for RNA inverse folding from 3D backbone structure, trained on two rented RTX 4090s.</p>
+          <span class="tag">Python · PyTorch Geometric</span>
+        </a>
+        <a class="card glass tilt" href="https://github.com/Maplesyxy/NN_GradCam_for_AD" target="_blank" rel="noopener">
+          <h3>Grad-CAM ViT for Alzheimer’s</h3>
+          <p class="role">Research code</p>
+          <p>Interpretable early-diagnosis model on brain MRI with saliency heatmaps and an upload web app for clinicians.</p>
+          <span class="tag">Jupyter · PyTorch</span>
         </a>
       </div>
     </section>
 
-    <!-- BEFORE YALE -->
-    <section id="earlier" class="section">
+    <!-- ORGANIZATIONS -->
+    <section id="organizations" class="section">
       <div class="section-head">
-        <h2>Before Yale</h2>
-        <p class="section-note">Things I started or led at The Lawrenceville School and in Shanghai, 2022–2026.</p>
+        <h2><span class="num">05</span>Organizations &amp; Leadership</h2>
+        <p class="section-note">Founded or led at The Lawrenceville School and in Shanghai, 2022–2026.</p>
       </div>
-      <ol class="ventures">
-        <li class="venture">
-          <div class="venture-body">
-            <h3>TechTrek <span class="muted">· Founder &amp; Editor-in-Chief, 2024–</span></h3>
-            <p>
-              A student-run, bilingual publication explaining science and technology to a general audience. It began as
-              WeChat explainers (the first piece was a Chinese translation of Dario Amodei’s “Machines of Loving Grace”)
-              and grew to 52 writers across 25 school chapters, 95+ articles and 100K+ words, read 120K+ times.
-            </p>
-            <p class="links">
-              <a href="https://www.techtrekusa.com" target="_blank" rel="noopener">techtrekusa.com</a>
-              <a href="https://www.instagram.com/techtrekusa/" target="_blank" rel="noopener">Instagram</a>
-            </p>
-          </div>
-        </li>
-        <li class="venture">
-          <div class="venture-body">
-            <h3>FutureFrontier Foundation <span class="muted">· Founder, 501(c)(3), 2024–</span></h3>
-            <p>
-              A nonprofit for youth STEM awareness and technology access. Raised $10K+, hosted the IdeaX podcast series,
-              and curated <em>Interstellar Migration</em>, a three-week multimedia space exhibition in Shanghai in summer 2024
-              that drew 1,300+ visitors and coverage from five national outlets.
-            </p>
-            <p class="links">
-              <a href="https://www.futurefrontierfoundation.org" target="_blank" rel="noopener">futurefrontierfoundation.org</a>
-              <a href="https://mp.weixin.qq.com/s/APe213XcXDQlcolJ3uCGWA" target="_blank" rel="noopener">Exhibition coverage (中文)</a>
-            </p>
-          </div>
-        </li>
-        <li class="venture">
-          <div class="venture-body">
-            <h3>Science Entrepreneurship Club &amp; Horizons Day <span class="muted">· Founder, 2023–2026</span></h3>
-            <p>
-              Lawrenceville’s largest STEM club (150+ members). In May 2025 I initiated and organized Horizons Day, the
-              school’s first all-school STEM day: 26 workshops, 60+ faculty, 15 clubs and a keynote I delivered.
-            </p>
-            <p class="links">
-              <a href="https://www.lawrenceville.org/life-at-lawrenceville/news-events/news-detail/~board/school-news/post/lawrentians-explore-new-horizons-during-weekend-programming" target="_blank" rel="noopener">Lawrenceville news</a>
-              <a href="https://www.flickr.com/photos/thelawrencevilleschool/albums/72177720326232066/" target="_blank" rel="noopener">Photo album</a>
-            </p>
-          </div>
-        </li>
-        <li class="venture">
-          <div class="venture-body">
-            <h3>Varsity Fencing <span class="muted">· Captain of All Weapons, sabre, USA Fencing C24</span></h3>
-            <p>
-              Fenced for Hong Kong at the 2024 Junior World Cup in Spain. As captain in 2025–26 the team had its best season
-              in school history: the program’s first Cetrulo title, boys’ Prep State champions and girls’ runners-up, and I
-              placed first among C-rated fencers. USA Fencing All-Academic First Team, twice.
-            </p>
-            <p class="links">
-              <a href="https://www.nj.com/highschoolsports/2026/01/lawrenceville-wins-first-cetrulo-title-in-program-history-repeats-as-foil-champs.html" target="_blank" rel="noopener">NJ.com on the Cetrulo title</a>
-            </p>
-          </div>
-        </li>
-        <li class="venture">
-          <div class="venture-body">
-            <h3>International Students Association <span class="muted">· President, 2025–26</span></h3>
-            <p>
-              Four years on the board of Lawrenceville’s second-largest student organization, running the annual
-              international student gathering, a buddy system for new arrivals, welcome webinars, and Lunar New Year festivities.
-            </p>
-          </div>
-        </li>
-        <li class="venture">
-          <div class="venture-body">
-            <h3>Robotics &amp; Rocketry <span class="muted">· FIRST Tech Challenge, American Rocketry Challenge</span></h3>
-            <p>
-              Wrote the vision-processing and TeleOp code for the FTC robot (Java); the team took the Control Award and a
-              division finalist-alliance spot at the 2024 state championship. Key engineer on the rocketry team that finished
-              67th of 798 teams and reached the 2023 ARC national finals.
-            </p>
-          </div>
-        </li>
-      </ol>
+      <div class="cards">
+        <div class="card glass tilt">
+          <h3>TechTrek</h3>
+          <p class="role">Founder &amp; Editor-in-Chief · 2024–</p>
+          <p>A student-run, bilingual publication explaining science and technology to a general audience. Started as WeChat explainers; grew to 52 writers across 25 school chapters, 95+ articles and 100K+ words, read 120K+ times.</p>
+          <p class="links">
+            <a href="https://www.techtrekusa.com" target="_blank" rel="noopener">techtrekusa.com</a>
+            <a href="https://www.instagram.com/techtrekusa/" target="_blank" rel="noopener">Instagram</a>
+          </p>
+          <span class="tag">Publication · 52 writers</span>
+        </div>
+        <div class="card glass tilt">
+          <h3>FutureFrontier Foundation</h3>
+          <p class="role">Founder · 501(c)(3) · 2024–</p>
+          <p>A nonprofit for youth STEM awareness and technology access. Raised $10K+, hosted the IdeaX podcast series, and curated <em>Interstellar Migration</em>, a three-week space exhibition in Shanghai that drew 1,300+ visitors and five national outlets.</p>
+          <p class="links">
+            <a href="https://www.futurefrontierfoundation.org" target="_blank" rel="noopener">futurefrontierfoundation.org</a>
+            <a href="https://mp.weixin.qq.com/s/APe213XcXDQlcolJ3uCGWA" target="_blank" rel="noopener">Exhibition coverage (中文)</a>
+          </p>
+          <span class="tag">Nonprofit · Exhibition</span>
+        </div>
+        <div class="card glass tilt">
+          <h3>Science Entrepreneurship Club &amp; Horizons Day</h3>
+          <p class="role">Founder · 2023–2026</p>
+          <p>Lawrenceville’s largest STEM club (150+ members). In May 2025 I initiated and organized Horizons Day, the school’s first all-school STEM day: 26 workshops, 60+ faculty, 15 clubs and a keynote I delivered.</p>
+          <p class="links">
+            <a href="https://www.lawrenceville.org/life-at-lawrenceville/news-events/news-detail/~board/school-news/post/lawrentians-explore-new-horizons-during-weekend-programming" target="_blank" rel="noopener">Lawrenceville news</a>
+            <a href="https://www.flickr.com/photos/thelawrencevilleschool/albums/72177720326232066/" target="_blank" rel="noopener">Photo album</a>
+          </p>
+          <span class="tag">Club · School-wide event</span>
+        </div>
+        <div class="card glass tilt">
+          <h3>Varsity Fencing</h3>
+          <p class="role">Captain of All Weapons · Sabre · USA Fencing C24</p>
+          <p>Fenced for Hong Kong at the 2024 Junior World Cup in Spain. As captain in 2025–26 the team had its best season in school history: the program’s first Cetrulo title, boys’ Prep State champions and girls’ runners-up, and a first-place individual finish among C-rated fencers. USA Fencing All-Academic First Team, twice.</p>
+          <p class="links">
+            <a href="https://www.nj.com/highschoolsports/2026/01/lawrenceville-wins-first-cetrulo-title-in-program-history-repeats-as-foil-champs.html" target="_blank" rel="noopener">NJ.com on the Cetrulo title</a>
+          </p>
+          <span class="tag">Athletics · Captain</span>
+        </div>
+        <div class="card glass tilt">
+          <h3>International Students Association</h3>
+          <p class="role">President · 2025–26 (board since 2022)</p>
+          <p>Lawrenceville’s second-largest student organization. Ran the annual international student gathering, a buddy system for new arrivals, welcome webinars, and Lunar New Year festivities.</p>
+          <span class="tag">Student government</span>
+        </div>
+        <div class="card glass tilt">
+          <h3>Robotics &amp; Rocketry</h3>
+          <p class="role">Programmer &amp; Mechanic · FIRST Tech Challenge · American Rocketry Challenge</p>
+          <p>Wrote the vision-processing and TeleOp code for the FTC robot in Java; the team took the Control Award and a division finalist-alliance spot at the 2024 state championship. Key engineer on the rocketry team that finished 67th of 798 and reached the 2023 ARC national finals.</p>
+          <span class="tag">Engineering · National finalist</span>
+        </div>
+      </div>
     </section>
 
     <!-- AWARDS -->
     <section id="awards" class="section">
       <div class="section-head">
-        <h2>Awards &amp; Honors</h2>
+        <h2><span class="num">06</span>Awards &amp; Honors</h2>
       </div>
       <ul class="awards">
-        <li><span class="award-year">2026</span><div><strong>U.S. Presidential Scholar</strong> — one of 161 scholars selected from 3.9 million students; the female scholar for New Jersey.</div></li>
-        <li><span class="award-year">2026</span><div><strong>Citadel High-School Terminal</strong> — 1st place, national AI competition (team).</div></li>
-        <li><span class="award-year">2026</span><div><strong>Jane Street WiSE Estimathon</strong> — 1st place (team).</div></li>
-        <li><span class="award-year">2026</span><div><strong>Tencent Technology Youth Camp</strong> — international top 50 in AI hackathon out of 50,000+.</div></li>
-        <li><span class="award-year">2026</span><div><strong>National Merit Scholarship</strong> — Finalist.</div></li>
-        <li><span class="award-year">2026</span><div><strong>Susquehanna (SIG) Virtual High School Discovery Event</strong> — participant.</div></li>
-        <li><span class="award-year">2025–26</span><div><strong>NCWIT Aspirations in Computing</strong> — National Honorable Mention (top 10%), two consecutive years.</div></li>
-        <li><span class="award-year">2025</span><div><strong>USA Computing Olympiad</strong> — Platinum division.</div></li>
-        <li><span class="award-year">2025</span><div><strong>Yale Science Fair Award</strong> — Yale Science &amp; Engineering Association, one per ISEF-affiliated fair.</div></li>
-        <li><span class="award-year">2024–25</span><div><strong>Mercer Science &amp; Engineering Fair, Senior Division</strong> — 1st place and ISEF finalist alternate, two consecutive years.</div></li>
-        <li><span class="award-year">2024</span><div><strong>Regeneron Biomedical Science Award</strong> — for significant scientific and technical innovation within the area of Computational Biology</div></li>
-        <li><span class="award-year">2024</span><div><strong>U.S. Air Force Research Laboratory Award</strong> — for scientific and technical innovation.</div></li>
-        <li><span class="award-year">2025</span><div><strong>Anson L. Clark Scholars</strong> — accepted to the computer-science track (12 students nationally); declined for the Jefferson internship.</div></li>
-        <li><span class="award-year">2022</span><div><strong>Uber Global Hackathon</strong> — Asia winner and global top 15 of 732 teams (team).</div></li>
-        <li><span class="award-year">2022–26</span><div><strong>The Lawrenceville School</strong> — Cum Laude; Hutchins Jefferson Science Scholar (3 of 230).</div></li>
+        <li class="glass"><span class="award-year">2026</span><div><strong>U.S. Presidential Scholar</strong><span>One of 161 scholars selected from 3.9 million graduates; the female scholar for New Jersey.</span></div></li>
+        <li class="glass"><span class="award-year">2026</span><div><strong>Citadel High-School Terminal, 1st Place</strong><span>National AI strategy competition, team of three.</span></div></li>
+        <li class="glass"><span class="award-year">2026</span><div><strong>Jane Street WiSE Estimathon, 1st Place</strong><span>Team estimation contest at Jane Street’s Women in STEM program.</span></div></li>
+        <li class="glass"><span class="award-year">2026</span><div><strong>Tencent Technology Youth Camp, International Top 50</strong><span>AI hackathon with 50,000+ entrants.</span></div></li>
+        <li class="glass"><span class="award-year">2026</span><div><strong>National Merit Scholarship Finalist</strong><span>PSAT 1520/1520.</span></div></li>
+        <li class="glass"><span class="award-year">2026</span><div><strong>NCWIT Aspirations in Computing, National Honorable Mention</strong><span>Top 300 of 2,700 applicants; second consecutive year.</span></div></li>
+        <li class="glass"><span class="award-year">2026</span><div><strong>Cum Laude, The Lawrenceville School</strong><span>Highest honor given to graduating class members.</span></div></li>
+        <li class="glass"><span class="award-year">2026</span><div><strong>Susquehanna (SIG) Virtual High School Discovery Event</strong><span>Selected participant.</span></div></li>
+        <li class="glass"><span class="award-year">2025</span><div><strong>NCWIT Aspirations in Computing, National Honorable Mention</strong><span>Top 10% nationally for technical skill and leadership.</span></div></li>
+        <li class="glass"><span class="award-year">2025</span><div><strong>USA Computing Olympiad, Platinum</strong><span>Highest USACO division, certified score.</span></div></li>
+        <li class="glass"><span class="award-year">2025</span><div><strong>Yale Science Fair Award</strong><span>Yale Science &amp; Engineering Association, one per ISEF-affiliated fair; RNA inverse-folding project.</span></div></li>
+        <li class="glass"><span class="award-year">2025</span><div><strong>Mercer Science &amp; Engineering Fair, 1st Place</strong><span>Senior division, RNA inverse-folding project; ISEF finalist alternate.</span></div></li>
+        <li class="glass"><span class="award-year">2025</span><div><strong>Anson L. Clark Scholars, Accepted</strong><span>Computer-science track, 12 students nationally; declined for the Jefferson internship.</span></div></li>
+        <li class="glass"><span class="award-year">2024</span><div><strong>Mercer Science &amp; Engineering Fair, 1st Place</strong><span>Senior division, Alzheimer’s early-diagnosis project; ISEF finalist alternate.</span></div></li>
+        <li class="glass"><span class="award-year">2024</span><div><strong>Regeneron Biomedical Science Award</strong><span>ISEF special award, one per fair, for excellence in biological science.</span></div></li>
+        <li class="glass"><span class="award-year">2024</span><div><strong>U.S. Air Force Research Laboratory Award</strong><span>ISEF special award for scientific and technical innovation.</span></div></li>
+        <li class="glass"><span class="award-year">2024</span><div><strong>Junior World Cup, Women’s Sabre</strong><span>Represented Hong Kong, Spain 2024.</span></div></li>
+        <li class="glass"><span class="award-year">2023–26</span><div><strong>Hutchins Jefferson Science Scholar</strong><span>One of 3 of 230 selected for Lawrenceville’s two-year research program with Thomas Jefferson University.</span></div></li>
+        <li class="glass"><span class="award-year">2023</span><div><strong>American Rocketry Challenge, National Finalist</strong><span>Team ranked 67th of 798.</span></div></li>
+        <li class="glass"><span class="award-year">2022</span><div><strong>Uber Global Hackathon, Asia Winner</strong><span>Global top 15 of 732 teams; UberHealth pandemic-travel app.</span></div></li>
       </ul>
     </section>
 
     <!-- CONTACT -->
     <section id="contact" class="section contact">
-      <div class="contact-card">
+      <div class="contact-card glass">
         <h2>Say hello</h2>
         <p>I’m always happy to talk about research, projects, or anything at the intersection of math, ML and the sciences.</p>
         <a class="btn btn-primary" href="mailto:annabelle.yao@yale.edu">annabelle.yao@yale.edu</a>
@@ -380,6 +429,7 @@
     </p>
   </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" defer></script>
   <script src="script.js" defer></script>
 </body>
 </html>

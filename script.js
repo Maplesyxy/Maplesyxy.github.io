@@ -29,12 +29,22 @@
   }
 
   // Gentle reveal for cards and list items.
-  const items = document.querySelectorAll('.pub, .card, .venture, .timeline li, .awards li, .facts div');
+  const items = document.querySelectorAll('.pub, .card, .timeline li, .awards li, .facts div');
   if ('IntersectionObserver' in window) {
     items.forEach(el => el.classList.add('reveal'));
     const rev = new IntersectionObserver(entries => {
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); rev.unobserve(e.target); } });
     }, { rootMargin: '0px 0px -8% 0px' });
     items.forEach(el => rev.observe(el));
+  }
+
+  // 3D tilt on glass cards: pointer devices only, and never when motion is reduced.
+  const fine = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (fine && !reduced && window.VanillaTilt) {
+    VanillaTilt.init(document.querySelectorAll('.tilt'), {
+      max: 6, speed: 600, perspective: 900, scale: 1.01,
+      glare: true, 'max-glare': 0.12, gyroscope: false
+    });
   }
 })();
