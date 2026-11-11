@@ -160,6 +160,7 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 20px; position: relati
 .about-grid { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 48px; }
 .prose p { color: var(--ink-2); font-size: 1.05rem; }
 .prose p:first-child { font-family: var(--serif); font-size: 1.45rem; line-height: 1.4; color: var(--ink); font-weight: 400; }
+.prose .aside { font-size: .92rem; color: var(--ink-3); margin-top: 18px; }
 .prose a { text-decoration: underline; text-decoration-color: var(--highlight); text-underline-offset: 3px; }
 .facts dl { margin: 0; display: grid; gap: 14px; }
 .facts div { padding: 14px 16px; }
