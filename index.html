@@ -58,9 +58,19 @@
   <!-- HERO -->
   <section class="hero" id="top">
     <div class="hero-bg" aria-hidden="true">
-      <img src="assets/hero-alps.jpg" alt="" width="1918" height="863" fetchpriority="high">
+      <img class="plane plane-photo" src="assets/hero-alps.jpg" alt="" width="1918" height="863" fetchpriority="high">
+      <div class="plane plane-mist"></div>
+      <svg class="plane plane-ridge" viewBox="0 0 1440 220" preserveAspectRatio="none"><path d="M0 220V150 L30 134 L66 94 L84 70 L114 70 L158 70 L176 70 L212 92 L230 84 L248 106 L266 78 L290 70 L334 92 L352 84 L370 70 L400 92 L424 70 L468 76 L512 70 L530 70 L560 70 L604 70 L648 70 L692 70 L728 92 L758 126 L802 160 L832 166 L856 150 L880 122 L924 128 L968 162 L998 190 L1028 162 L1046 184 L1070 190 L1094 190 L1130 150 L1148 162 L1178 174 L1222 190 L1266 190 L1284 162 L1314 190 L1332 150 L1362 184 L1392 190 L1422 150 L1440 150 V220Z"/></svg>
+      <div class="leaves">
+        <svg style="--x:8%;--dur:17s;--delay:-3s;--s:.8"><use href="#maple"/></svg>
+        <svg style="--x:22%;--dur:21s;--delay:-11s;--s:1"><use href="#maple"/></svg>
+        <svg style="--x:47%;--dur:19s;--delay:-7s;--s:.7"><use href="#maple"/></svg>
+        <svg style="--x:68%;--dur:23s;--delay:-15s;--s:.9"><use href="#maple"/></svg>
+        <svg style="--x:81%;--dur:16s;--delay:-1s;--s:.75"><use href="#maple"/></svg>
+        <svg style="--x:93%;--dur:20s;--delay:-9s;--s:.85"><use href="#maple"/></svg>
+      </div>
     </div>
-    <div class="hero-inner">
+    <div class="hero-inner plane plane-card">
       <div class="hero-card">
         <img class="hero-avatar" src="assets/annabelle.jpg" alt="Portrait of Annabelle Yao" width="200" height="200" loading="eager">
         <div class="hero-text">
@@ -137,6 +147,8 @@
         </aside>
       </div>
     </section>
+
+    <div class="divider" aria-hidden="true"><svg viewBox="0 0 1200 40" preserveAspectRatio="none"><path pathLength="1" d="M0 30 150 12 260 26 380 6 470 22 600 10 720 28 860 8 980 24 1100 14 1200 26"/></svg></div>
 
     <!-- EXPERIENCE -->
     <section id="experience" class="section">
@@ -216,6 +228,8 @@
         </li>
       </ol>
     </section>
+
+    <div class="divider" aria-hidden="true"><svg viewBox="0 0 1200 40" preserveAspectRatio="none"><path pathLength="1" d="M0 30 150 12 260 26 380 6 470 22 600 10 720 28 860 8 980 24 1100 14 1200 26"/></svg></div>
 
     <!-- RESEARCH -->
     <section id="research" class="section">
@@ -300,14 +314,16 @@
       </ol>
     </section>
 
+    <div class="divider" aria-hidden="true"><svg viewBox="0 0 1200 40" preserveAspectRatio="none"><path pathLength="1" d="M0 30 150 12 260 26 380 6 470 22 600 10 720 28 860 8 980 24 1100 14 1200 26"/></svg></div>
+
     <!-- PROJECTS -->
     <section id="projects" class="section">
       <div class="section-head">
         <h2><span class="num" aria-hidden="true">04</span>Projects</h2>
         <a class="section-link" href="https://github.com/Maplesyxy" target="_blank" rel="noopener">All repositories ↗</a>
       </div>
-      <div class="cards cards-2">
-        <div class="card glass">
+      <div class="zigzag">
+        <div class="card glass"><span class="idx" aria-hidden="true">01</span>
           <h3>Clinical-trial outcome models</h3>
           <p class="role">MIT CSAIL · <a class="role-link" href="https://compbio.mit.edu/" target="_blank" rel="noopener">Kellis Lab</a> · <a class="role-link" href="https://home.withmantis.com/" target="_blank" rel="noopener">Mantis</a></p>
           <p>Benchmarks for clinical-trial toxicity prediction on TDC ClinTox: Morgan-fingerprint MLPs and AffinityNet embeddings against a SMILES transformer, 0.85–0.88 test AUROC. Built inside the Mantis platform’s science task force.</p>
@@ -317,7 +333,7 @@
           </p>
           <span class="tag">PyTorch · Cheminformatics</span>
         </div>
-        <div class="card glass">
+        <div class="card glass"><span class="idx" aria-hidden="true">02</span>
           <h3>GVP-Transformer for RNA Design</h3>
           <p class="role">Research code · ISEF 2025</p>
           <p>Geometric deep-learning framework for RNA inverse folding from 3D backbone structure: six torsion angles and C4′ displacement vectors in a local frame, a GVP-GCN encoder and a Transformer decoder, trained on two rented RTX 4090s.</p>
@@ -327,7 +343,7 @@
           </p>
           <span class="tag">Python · PyTorch Geometric</span>
         </div>
-        <div class="card glass">
+        <div class="card glass"><span class="idx" aria-hidden="true">03</span>
           <h3>DVS Vision Transformer</h3>
           <p class="role">Research code · UCSB SRA 2024</p>
           <p>Vision Transformer for dynamic-vision-sensor event streams, built for efficient real-time gesture recognition; 32×32 patches reach 98.4% on DVS128 Gesture in five epochs.</p>
@@ -337,7 +353,7 @@
           </p>
           <span class="tag">Jupyter · PyTorch</span>
         </div>
-        <div class="card glass">
+        <div class="card glass"><span class="idx" aria-hidden="true">04</span>
           <h3>Grad-CAM ViT for Alzheimer’s</h3>
           <p class="role">Research code · ISEF 2024</p>
           <p>Interpretable early-diagnosis model on ~6,400 ADNI brain MRIs with Grad-CAM saliency heatmaps and an upload web app for clinicians.</p>
@@ -350,6 +366,8 @@
       </div>
     </section>
 
+    <div class="divider" aria-hidden="true"><svg viewBox="0 0 1200 40" preserveAspectRatio="none"><path pathLength="1" d="M0 30 150 12 260 26 380 6 470 22 600 10 720 28 860 8 980 24 1100 14 1200 26"/></svg></div>
+
     <!-- ORGANIZATIONS -->
     <section id="organizations" class="section">
       <div class="section-head">
@@ -357,7 +375,7 @@
         <p class="section-note">Founded or led at The Lawrenceville School and in Shanghai, 2022–2026.</p>
       </div>
       <div class="cards">
-        <div class="card glass">
+        <div class="card glass featured">
           <h3>TechTrek</h3>
           <p class="role">Founder &amp; Editor-in-Chief · 2024–</p>
           <p>A student-run, bilingual publication explaining science and technology to a general audience. Started as WeChat explainers; grew to 52 writers across 25 school chapters, 95+ articles and 100K+ words, read 120K+ times.</p>
@@ -412,7 +430,9 @@
     </section>
 
     <!-- AWARDS -->
-    <section id="awards" class="section">
+    <section id="awards" class="section night">
+      <svg class="night-ridge night-ridge-top" viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true"><path d="M0 220V150L70 122 150 160 250 92 330 140 420 98 500 150 600 78 690 128 760 108 860 158 960 92 1050 138 1140 102 1240 150 1330 108 1440 148V220Z"/></svg>
+      <svg class="night-ridge night-ridge-bottom" viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true"><path d="M0 220V150L70 122 150 160 250 92 330 140 420 98 500 150 600 78 690 128 760 108 860 158 960 92 1050 138 1140 102 1240 150 1330 108 1440 148V220Z"/></svg>
       <div class="section-head">
         <h2><span class="num" aria-hidden="true">06</span>Awards &amp; Honors</h2>
         <ul class="legend" aria-label="Award level key">
@@ -451,6 +471,7 @@
   <section id="contact" class="closing">
     <div class="closing-inner">
       <div class="closing-card">
+        <svg class="closing-ridge" viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true"><path d="M0 220V150L70 122 150 160 250 92 330 140 420 98 500 150 600 78 690 128 760 108 860 158 960 92 1050 138 1140 102 1240 150 1330 108 1440 148V220Z"/></svg>
         <p class="eyebrow">Get in touch</p>
         <h2>Let’s talk.</h2>
         <p>Startup ideas, interesting problems, ML work or research. My inbox is open.</p>

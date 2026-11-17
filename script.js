@@ -1,6 +1,7 @@
 (function () {
   const root = document.documentElement;
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const fine = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
   // Theme
   const toggle = document.querySelector('.theme-toggle');
@@ -29,6 +30,17 @@
       entries.forEach(e => { if (!e.isIntersecting) return; links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id)); });
     }, { rootMargin: '-40% 0px -55% 0px' });
     sections.forEach(s => obs.observe(s));
+  }
+
+  // Hero planes: scroll and pointer publish three numbers; CSS transforms do the rest.
+  const hero = document.querySelector('.hero');
+  if (hero && !reduced) {
+    let sy = 0, mx = 0, my = 0, queued = false;
+    const apply = () => { hero.style.setProperty('--sy', sy.toFixed(1)); hero.style.setProperty('--mx', mx.toFixed(3)); hero.style.setProperty('--my', my.toFixed(3)); queued = false; };
+    const schedule = () => { if (!queued) { queued = true; requestAnimationFrame(apply); } };
+    const onScroll = () => { const lim = innerHeight * 1.2; const y = Math.min(scrollY, lim); if (y === sy) return; sy = y; schedule(); };
+    addEventListener('scroll', onScroll, { passive: true }); onScroll();
+    if (fine) hero.addEventListener('pointermove', e => { mx = e.clientX / innerWidth - 0.5; my = e.clientY / innerHeight - 0.5; schedule(); });
   }
 
   // Reveal once on entry; siblings stagger via --d. Opacity/transform only, so it stays on the compositor.
