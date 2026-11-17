@@ -121,27 +121,14 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 20px; position: relati
 .hero-bg { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
 .plane { will-change: transform; }
 .plane-photo { position: absolute; left: 0; top: -6%; width: 100%; height: 108%; object-fit: cover; object-position: center 40%;
-  transform: translate3d(calc(var(--mx, 0) * -10px), calc(var(--sy, 0) * 0.18px + var(--my, 0) * -6px), 0); }
+  transform: translate3d(0, calc(var(--sy, 0) * 0.18px), 0); }
 .plane-mist { position: absolute; left: -10%; right: -10%; bottom: 16%; height: 34%; opacity: .9; pointer-events: none;
   background: radial-gradient(55% 100% at 50% 100%, rgba(255,255,255,.6), rgba(255,255,255,0) 70%);
-  transform: translate3d(calc(var(--mx, 0) * 22px), calc(var(--sy, 0) * 0.32px), 0); }
-.plane-ridge { position: absolute; left: -2%; bottom: -2px; width: 104%; height: min(17vh, 150px); fill: var(--ridge); opacity: .92;
-  transform: translate3d(calc(var(--mx, 0) * 34px), calc(var(--sy, 0) * -0.1px + var(--my, 0) * 8px), 0); }
+  transform: translate3d(0, calc(var(--sy, 0) * 0.32px), 0); }
 .plane-card { transform: translate3d(0, calc(var(--sy, 0) * 0.08px), 0); }
 .hero-bg::after {
   content: ""; position: absolute; inset: 0;
   background: linear-gradient(180deg, rgba(0,0,0,.18) 0%, rgba(0,0,0,0) 35%, rgba(0,0,0,0) 72%, var(--bg) 100%);
-}
-/* ambient leaves: transform-only loop, hero only */
-.leaves { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
-.leaves svg { position: absolute; left: var(--x); top: -40px; width: 26px; height: 27px; opacity: .8;
-  animation: leaf-fall var(--dur, 18s) linear infinite; animation-delay: var(--delay, 0s); will-change: transform; }
-@keyframes leaf-fall {
-  0%   { transform: translate3d(0, -40px, 0) rotate(0deg) scale(var(--s, 1)); }
-  25%  { transform: translate3d(38px, 25vh, 0) rotate(95deg) scale(var(--s, 1)); }
-  50%  { transform: translate3d(-22px, 52vh, 0) rotate(200deg) scale(var(--s, 1)); }
-  75%  { transform: translate3d(30px, 78vh, 0) rotate(285deg) scale(var(--s, 1)); }
-  100% { transform: translate3d(-12px, 108vh, 0) rotate(360deg) scale(var(--s, 1)); }
 }
 .hero-inner { width: 100%; max-width: var(--maxw); margin: 0 auto; }
 .hero-card {
@@ -350,7 +337,7 @@ div.card { cursor: default; }
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
   .btn, .card, .glass { transition: none; }
-  .leaves, .plane-mist { display: none; }
+  .plane-mist { display: none; }
   .plane, .plane-card { transform: none !important; }
   .divider path { stroke-dashoffset: 0; animation: none; }
 }
@@ -389,7 +376,6 @@ div.card { cursor: default; }
   .backdrop img { opacity: .22; }
   .cards, .cards-2 { grid-template-columns: 1fr; }
   .cards .featured { grid-column: auto; }
-  .leaves svg:nth-child(n+4) { display: none; }
   .idx { font-size: 2.4rem; }
   .night { margin-top: 90px; margin-bottom: 70px; }
   .section-head { flex-direction: column; align-items: flex-start; }
